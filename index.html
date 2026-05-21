@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SeedSpark — Client Health Score</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#BE3B2B;--red-bg:#FDF0EE;--red-bd:#EEB8B2;--red-tx:#7A2218;
+  --yel:#9E6A0A;--yel-bg:#FDFAED;--yel-bd:#EDD98A;--yel-tx:#6B4606;
+  --grn:#1A6E3C;--grn-bg:#EEF9F3;--grn-bd:#8ED4AB;--grn-tx:#114D29;
+  --navy:#0D1C38;--ink:#1E2D45;--slate:#526070;--muted:#8B9BB0;
+  --line:#DDE3EB;--surface:#F4F7FA;--card:#FFFFFF;
+  --f:'DM Sans',system-ui,sans-serif;--m:'DM Mono',monospace
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased}
+body{font-family:var(--f);background:var(--surface);color:var(--ink);min-height:100vh}
+
+nav{background:var(--navy);height:54px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200}
+.nav-l{display:flex;align-items:center;gap:10px}
+.logo{width:28px;height:28px;background:#E8521A;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.logo svg{width:14px;height:14px;fill:white}
+.nav-title{font-size:14px;font-weight:600;color:white;letter-spacing:-.2px}
+.nav-r{display:flex;align-items:center;gap:12px}
+.nav-date{font-size:11px;color:#7A90A8;font-family:var(--m)}
+.nav-chip{font-size:11px;background:rgba(232,82,26,.18);color:#F08A5A;padding:3px 10px;border-radius:20px;border:1px solid rgba(232,82,26,.3)}
+
+.hero{background:var(--navy);padding:18px 28px 26px}
+.hero-lbl{font-size:10px;color:#7A90A8;letter-spacing:.8px;text-transform:uppercase;margin-bottom:12px;font-family:var(--m)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:420px}
+.kpi{padding:14px 16px;border-radius:10px;cursor:pointer;transition:transform .15s;border:1.5px solid transparent;user-select:none}
+.kpi:hover{transform:translateY(-2px)}
+.kpi.on{border-color:rgba(255,255,255,.2)}
+.kr{background:rgba(190,59,43,.28)}.ky{background:rgba(158,106,10,.22)}.kg{background:rgba(26,110,60,.22)}
+.kpi-lbl{font-size:10px;color:#7A90A8;letter-spacing:.6px;text-transform:uppercase;margin-bottom:4px}
+.kpi-n{font-size:30px;font-weight:600;line-height:1;letter-spacing:-1px}
+.nr{color:#FF7063}.ny{color:#F5CE42}.ng{color:#42DB7A}
+.kpi-sub{font-size:11px;color:#4A6070;margin-top:2px}
+
+.bar{padding:12px 28px;background:var(--card);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px;flex-wrap:wrap;position:sticky;top:54px;z-index:100}
+.pill{font-size:12px;font-weight:500;padding:5px 14px;border-radius:20px;border:1px solid var(--line);background:transparent;color:var(--slate);cursor:pointer;font-family:var(--f);white-space:nowrap;transition:all .15s}
+.pill:hover{border-color:#aab;color:var(--ink)}
+.pa{background:var(--navy);color:white;border-color:var(--navy)}
+.pr{background:var(--red-bg);color:var(--red-tx);border-color:var(--red-bd)}
+.py{background:var(--yel-bg);color:var(--yel-tx);border-color:var(--yel-bd)}
+.pg{background:var(--grn-bg);color:var(--grn-tx);border-color:var(--grn-bd)}
+.bcount{font-size:12px;color:var(--muted);margin-left:2px;font-family:var(--m)}
+.sb{margin-left:auto;position:relative}
+.sb svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:13px;height:13px;stroke:var(--muted);fill:none;stroke-width:2;pointer-events:none}
+.si{font-size:13px;padding:6px 12px 6px 30px;border:1px solid var(--line);border-radius:20px;background:var(--surface);color:var(--ink);font-family:var(--f);width:190px;outline:none;transition:border-color .15s,width .2s}
+.si:focus{border-color:var(--muted);width:230px}
+
+.grid-wrap{padding:18px 28px 48px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:10px}
+
+/* THE CARD — one color, clean */
+.card{border-radius:12px;padding:16px;border:1px solid transparent;transition:box-shadow .15s,transform .15s;animation:fu .2s ease both}
+@keyframes fu{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+.card:hover{box-shadow:0 4px 20px rgba(0,0,0,.09);transform:translateY(-1px)}
+.card.gone{display:none}
+
+/* Red card */
+.card.red{background:var(--red-bg);border-color:var(--red-bd)}
+.card.red .cname{color:var(--red-tx)}
+.card.red .ctag{background:rgba(190,59,43,.12);color:var(--red-tx)}
+.card.red .reason{color:var(--red-tx);opacity:.8}
+.card.red .divider{border-color:var(--red-bd)}
+
+/* Yellow card */
+.card.yellow{background:var(--yel-bg);border-color:var(--yel-bd)}
+.card.yellow .cname{color:var(--yel-tx)}
+.card.yellow .ctag{background:rgba(158,106,10,.12);color:var(--yel-tx)}
+.card.yellow .reason{color:var(--yel-tx);opacity:.8}
+.card.yellow .divider{border-color:var(--yel-bd)}
+
+/* Green card */
+.card.green{background:var(--grn-bg);border-color:var(--grn-bd)}
+.card.green .cname{color:var(--grn-tx)}
+.card.green .ctag{background:rgba(26,110,60,.12);color:var(--grn-tx)}
+.card.green .reason{color:var(--grn-tx);opacity:.8}
+.card.green .divider{border-color:var(--grn-bd)}
+
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}
+.cname{font-size:13px;font-weight:600;line-height:1.35;flex:1}
+.ctag{font-size:10px;font-weight:600;padding:3px 9px;border-radius:20px;white-space:nowrap;letter-spacing:.5px}
+.divider{border:none;border-top:1px solid;margin:0 0 9px}
+.reason{font-size:12px;line-height:1.5;font-weight:400}
+
+.empty{display:none;text-align:center;padding:60px 20px;color:var(--muted)}
+footer{text-align:center;padding:16px;font-size:11px;color:var(--muted);border-top:1px solid var(--line);font-family:var(--m)}
+
+@media(max-width:600px){
+  nav,.hero,.bar,.grid-wrap{padding-left:16px;padding-right:16px}
+  .kpis{max-width:100%}.kpi-n{font-size:22px}
+  .si{width:130px}.si:focus{width:160px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-l">
+    <div class="logo">
+      <svg viewBox="0 0 14 14"><polygon points="7,1 9,5.5 14,5.5 10.5,8.5 11.5,13 7,10.5 2.5,13 3.5,8.5 0,5.5 5,5.5"/></svg>
+    </div>
+    <span class="nav-title">SeedSpark — Client Health</span>
+  </div>
+  <div class="nav-r">
+    <span class="nav-date">May 20, 2026</span>
+    <span class="nav-chip">3 of 4 metrics active</span>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-lbl">This week</div>
+  <div class="kpis">
+    <div class="kpi kr" id="kpi-red" onclick="filterBy('red')">
+      <div class="kpi-lbl">At risk</div>
+      <div class="kpi-n nr">44</div>
+      <div class="kpi-sub">36% of clients</div>
+    </div>
+    <div class="kpi ky" id="kpi-yel" onclick="filterBy('yellow')">
+      <div class="kpi-lbl">Watch</div>
+      <div class="kpi-n ny">2</div>
+      <div class="kpi-sub">2% of clients</div>
+    </div>
+    <div class="kpi kg" id="kpi-grn" onclick="filterBy('green')">
+      <div class="kpi-lbl">Healthy</div>
+      <div class="kpi-n ng">75</div>
+      <div class="kpi-sub">62% of clients</div>
+    </div>
+  </div>
+</div>
+
+<div class="bar">
+  <button class="pill pa" id="pill-all" onclick="filterBy('all')">All</button>
+  <button class="pill" id="pill-red" onclick="filterBy('red')">At Risk</button>
+  <button class="pill" id="pill-yellow" onclick="filterBy('yellow')">Watch</button>
+  <button class="pill" id="pill-green" onclick="filterBy('green')">Healthy</button>
+  <span class="bcount" id="bcount">121 clients</span>
+  <div class="sb">
+    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <input class="si" id="si" placeholder="Search…" oninput="search(this.value)">
+  </div>
+</div>
+
+<div class="grid-wrap">
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty"><p>No clients match this filter.</p></div>
+</div>
+
+<footer>SeedSpark MSP &nbsp;·&nbsp; Client Health Score &nbsp;·&nbsp; Payment Health · Service Responsiveness · Support Demand Trend (pending) · Engagement Level (pending)</footer>
+
+<script>
+function reason(d) {
+  if (d.s === 'green') return 'All metrics healthy — no action needed.';
+  if (d.s === 'yellow') return 'Outstanding invoice — payment 31–60 days past due.';
+  // Red — figure out which metric(s) are driving it
+  const hasAR = d.ar === 'red';
+  const hasTK = d.tk === 'red';
+  const hasYelAR = d.ar === 'yellow';
+  if (hasAR && hasTK) return 'Outstanding invoice past due + open ticket aging beyond 21 days.';
+  if (hasAR) return 'Outstanding invoice — payment 61+ days past due.';
+  if (hasYelAR && hasTK) return 'Invoice 31–60 days past due + open ticket aging beyond 21 days.';
+  if (hasTK) return 'Open ticket has not been resolved in over 21 days.';
+  return 'Client requires attention — review account.';
+}
+
+const TAG = {red:'AT RISK', yellow:'WATCH', green:'HEALTHY'};
+
+function card(d) {
+  return `<div class="card ${d.s}" data-n="${d.n.toLowerCase()}" data-s="${d.s}">
+  <div class="card-top">
+    <div class="cname">${d.n}</div>
+    <span class="ctag">${TAG[d.s]}</span>
+  </div>
+  <hr class="divider">
+  <div class="reason">${reason(d)}</div>
+</div>`;
+}
+
+const C = [
+  {n:"AccruePartners",s:"red",ar:"green",tk:"red"},
+  {n:"Blue Dot Readi-Mix",s:"red",ar:"green",tk:"red"},
+  {n:"Caliber Construction Services",s:"red",ar:"green",tk:"red"},
+  {n:"Carolyn Vanderberg",s:"red",ar:"green",tk:"red"},
+  {n:"Charlotte Paint",s:"red",ar:"green",tk:"red"},
+  {n:"Concorde Construction",s:"red",ar:"green",tk:"red"},
+  {n:"CTJ Companies",s:"red",ar:"green",tk:"red"},
+  {n:"Direct Energy Partners",s:"red",ar:"green",tk:"red"},
+  {n:"Dorchester and Manor",s:"red",ar:"green",tk:"red"},
+  {n:"E2 Mechanical & Industrial Refrigeration",s:"red",ar:"green",tk:"red"},
+  {n:"Ed Wallace Construction",s:"red",ar:"green",tk:"red"},
+  {n:"ELM Carolina",s:"red",ar:"green",tk:"red"},
+  {n:"Encore Luxury Coaches",s:"red",ar:"red",tk:"green"},
+  {n:"Enviro-Master Services",s:"red",ar:"green",tk:"red"},
+  {n:"Fagus GreCon Inc.",s:"red",ar:"green",tk:"red"},
+  {n:"Hancock Landscape Services",s:"red",ar:"green",tk:"red"},
+  {n:"Herlocker Mechanical",s:"red",ar:"green",tk:"red"},
+  {n:"Huntley Brothers",s:"red",ar:"green",tk:"red"},
+  {n:"JCS Carolinas",s:"red",ar:"green",tk:"red"},
+  {n:"JenCon Builders",s:"red",ar:"red",tk:"green"},
+  {n:"Kent Jones Law",s:"red",ar:"yellow",tk:"red"},
+  {n:"Kuester Commercial",s:"red",ar:"green",tk:"red"},
+  {n:"Luquire",s:"red",ar:"green",tk:"red"},
+  {n:"Mechanical Systems & Services (MSS)",s:"red",ar:"green",tk:"red"},
+  {n:"Messer Financial Group",s:"red",ar:"green",tk:"red"},
+  {n:"Miller Services",s:"red",ar:"green",tk:"red"},
+  {n:"NAPA IBS",s:"red",ar:"red",tk:"green"},
+  {n:"Neals Grading",s:"red",ar:"green",tk:"red"},
+  {n:"New Forum",s:"red",ar:"green",tk:"red"},
+  {n:"Outlook Flooring",s:"red",ar:"green",tk:"red"},
+  {n:"Parton Law",s:"red",ar:"green",tk:"red"},
+  {n:"Piedmont Social House",s:"red",ar:"green",tk:"red"},
+  {n:"Powerhouse Mechanical",s:"red",ar:"green",tk:"red"},
+  {n:"Red Moon Marketing",s:"red",ar:"green",tk:"red"},
+  {n:"Revolution Services Group",s:"red",ar:"green",tk:"red"},
+  {n:"Ridgecrest Foundation",s:"red",ar:"green",tk:"red"},
+  {n:"SeedSpark",s:"red",ar:"green",tk:"red"},
+  {n:"Southern Piedmont Piping & Fabrication",s:"red",ar:"green",tk:"red"},
+  {n:"SparkNav",s:"red",ar:"green",tk:"red"},
+  {n:"St. Amand & Efird",s:"red",ar:"green",tk:"red"},
+  {n:"State Building Services",s:"red",ar:"green",tk:"red"},
+  {n:"Swindell Law Firm",s:"red",ar:"green",tk:"red"},
+  {n:"TDR Plumbing",s:"red",ar:"green",tk:"red"},
+  {n:"TLG Law",s:"red",ar:"green",tk:"red"},
+  {n:"Tony Pope",s:"red",ar:"green",tk:"red"},
+  {n:"Zanes Law",s:"red",ar:"green",tk:"red"},
+  {n:"Gala Affairs",s:"yellow",ar:"yellow",tk:"green"},
+  {n:"PFC Brakes",s:"yellow",ar:"yellow",tk:"green"},
+  {n:"7th Generation of Union",s:"green",ar:"green",tk:"green"},
+  {n:"AB Floor Solutions",s:"green",ar:"green",tk:"green"},
+  {n:"All Climate Storage",s:"green",ar:"green",tk:"green"},
+  {n:"Andersen Services",s:"green",ar:"green",tk:"green"},
+  {n:"Apex Ready Mix LLC",s:"green",ar:"green",tk:"green"},
+  {n:"Aspect Health",s:"green",ar:"green",tk:"green"},
+  {n:"Avenue",s:"green",ar:"green",tk:"green"},
+  {n:"Bobo's Wrecker Service",s:"green",ar:"green",tk:"green"},
+  {n:"C&C Boiler Sales & Service",s:"green",ar:"green",tk:"green"},
+  {n:"C2 Design",s:"green",ar:"green",tk:"green"},
+  {n:"CAVOK Family Office",s:"green",ar:"green",tk:"green"},
+  {n:"Carillon Independent Senior Living",s:"green",ar:"green",tk:"green"},
+  {n:"Carolina Floors",s:"green",ar:"green",tk:"green"},
+  {n:"Carolina Ingredients",s:"green",ar:"green",tk:"green"},
+  {n:"Colorful Gypsy",s:"green",ar:"green",tk:"green"},
+  {n:"Community Medical",s:"green",ar:"green",tk:"green"},
+  {n:"Cube Noda",s:"green",ar:"green",tk:"green"},
+  {n:"D&L Ceramic Tile",s:"green",ar:"green",tk:"green"},
+  {n:"Destum Partners",s:"green",ar:"green",tk:"green"},
+  {n:"Digital Mouth Advertising",s:"green",ar:"green",tk:"green"},
+  {n:"Dyer, Raines & Associates",s:"green",ar:"green",tk:"green"},
+  {n:"Edgewater Pools",s:"green",ar:"green",tk:"green"},
+  {n:"Fig Tree Restaurant",s:"green",ar:"green",tk:"green"},
+  {n:"FMK Architects",s:"green",ar:"green",tk:"green"},
+  {n:"Gary Frey",s:"green",ar:"green",tk:"green"},
+  {n:"Graphics International",s:"green",ar:"green",tk:"green"},
+  {n:"Harry's Grille & Tavern",s:"green",ar:"green",tk:"green"},
+  {n:"ICG Capital Securities",s:"green",ar:"green",tk:"green"},
+  {n:"Insurance Concepts",s:"green",ar:"green",tk:"green"},
+  {n:"Jamie Oliver",s:"green",ar:"green",tk:"green"},
+  {n:"Labor One",s:"green",ar:"green",tk:"green"},
+  {n:"Landworks Design Group",s:"green",ar:"green",tk:"green"},
+  {n:"Litaker Insurance",s:"green",ar:"green",tk:"green"},
+  {n:"Lowry Insurance",s:"green",ar:"green",tk:"green"},
+  {n:"M Watkins Construction",s:"green",ar:"green",tk:"green"},
+  {n:"Matt Jelnicky",s:"green",ar:"green",tk:"green"},
+  {n:"Matthews Building Supply",s:"green",ar:"green",tk:"green"},
+  {n:"Middle C Jazz",s:"green",ar:"green",tk:"green"},
+  {n:"Monastery Icons",s:"green",ar:"green",tk:"green"},
+  {n:"NARI of Greater Charlotte",s:"green",ar:"green",tk:"green"},
+  {n:"New Dimensions",s:"green",ar:"green",tk:"green"},
+  {n:"Noble Insurance Advisors",s:"green",ar:"green",tk:"green"},
+  {n:"Ormond Group",s:"green",ar:"green",tk:"green"},
+  {n:"PB Management",s:"green",ar:"green",tk:"green"},
+  {n:"Pageland Truck Works",s:"green",ar:"green",tk:"green"},
+  {n:"Paint One",s:"green",ar:"green",tk:"green"},
+  {n:"Portus Wealth Advisors",s:"green",ar:"green",tk:"green"},
+  {n:"Profit Advisory Group",s:"green",ar:"green",tk:"green"},
+  {n:"Project Life Movement",s:"green",ar:"green",tk:"green"},
+  {n:"ProSidian Consulting",s:"green",ar:"green",tk:"green"},
+  {n:"QMax Industries",s:"green",ar:"green",tk:"green"},
+  {n:"RAM Pavement",s:"green",ar:"green",tk:"green"},
+  {n:"ReVision Design & Remodeling",s:"green",ar:"green",tk:"green"},
+  {n:"Reynolds Trucking",s:"green",ar:"green",tk:"green"},
+  {n:"Riifo North America",s:"green",ar:"green",tk:"green"},
+  {n:"Sistare Carpets",s:"green",ar:"green",tk:"green"},
+  {n:"SiteWork Estimating Service",s:"green",ar:"green",tk:"green"},
+  {n:"Smith & Christensen",s:"green",ar:"green",tk:"green"},
+  {n:"Stephens Office Systems",s:"green",ar:"green",tk:"green"},
+  {n:"The Batten Group",s:"green",ar:"green",tk:"green"},
+  {n:"Tucker Administrators",s:"green",ar:"green",tk:"green"},
+  {n:"Venn Law Group",s:"green",ar:"green",tk:"green"},
+  {n:"WD Smith Grading",s:"green",ar:"green",tk:"green"},
+  {n:"Zar Custom Homes",s:"green",ar:"green",tk:"green"},
+];
+
+document.getElementById('grid').innerHTML = C.map(card).join('');
+
+let cf='all', cs='';
+
+const PILL_CLS = {all:'pa', red:'pr', yellow:'py', green:'pg'};
+
+function filterBy(f) {
+  cf = f;
+  ['all','red','yellow','green'].forEach(k => {
+    const p = document.getElementById('pill-'+k);
+    p.className = 'pill' + (k===f ? ' '+PILL_CLS[k] : '');
+  });
+  ['red','yel','grn'].forEach(k => {
+    const map = {red:'red',yel:'yellow',grn:'green'};
+    document.getElementById('kpi-'+k).classList.toggle('on', map[k]===f);
+  });
+  render();
+}
+
+function search(v) { cs = v.toLowerCase(); render(); }
+
+function render() {
+  let n = 0;
+  document.querySelectorAll('.card').forEach(c => {
+    const ok = (cf==='all' || c.dataset.s===cf) && (!cs || c.dataset.n.includes(cs));
+    c.classList.toggle('gone', !ok);
+    if (ok) n++;
+  });
+  document.getElementById('bcount').textContent = n + ' client' + (n!==1?'s':'');
+  document.getElementById('empty').style.display = n ? 'none' : 'block';
+}
+</script>
+</body>
+</html>
