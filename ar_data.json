@@ -1,0 +1,26 @@
+{
+  "Encore Luxury Coaches": {
+    "days": "90+",
+    "amount": 41250
+  },
+  "JenCon Builders": {
+    "days": "61-90",
+    "amount": 30621
+  },
+  "NAPA IBS": {
+    "days": "61-90",
+    "amount": 432
+  },
+  "Gala Affairs": {
+    "days": "31-60",
+    "amount": 1665.04
+  },
+  "PFC Brakes": {
+    "days": "31-60",
+    "amount": 10000
+  },
+  "Kent Jones Law": {
+    "days": "31-60",
+    "amount": 163
+  }
+}
