@@ -2,331 +2,338 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SeedSpark — Client Health Score</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ClientPulse — SparkNav</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --red:#BE3B2B;--red-bg:#FDF0EE;--red-bd:#EEB8B2;--red-tx:#7A2218;
-  --yel:#9E6A0A;--yel-bg:#FDFAED;--yel-bd:#EDD98A;--yel-tx:#6B4606;
-  --grn:#1A6E3C;--grn-bg:#EEF9F3;--grn-bd:#8ED4AB;--grn-tx:#114D29;
-  --navy:#0D1C38;--ink:#1E2D45;--slate:#526070;--muted:#8B9BB0;
-  --line:#DDE3EB;--surface:#F4F7FA;--card:#FFFFFF;
-  --f:'DM Sans',system-ui,sans-serif;--m:'DM Mono',monospace
+  --navy:#0C1F38; --blue:#145484; --mid:#1A6BAE; --light:#4E9BE3; --pale:#D6EAFB; --ice:#EEF6FD;
+  --cr:#B91C1C; --cr-bg:#FEF2F2; --cr-bd:#FECACA; --cr-tx:#7F1D1D;
+  --ri:#C2410C; --ri-bg:#FFF7ED; --ri-bd:#FED7AA; --ri-tx:#7C2D12;
+  --wa:#9A6200; --wa-bg:#FEFCE8; --wa-bd:#FDE68A; --wa-tx:#713F12;
+  --he:#166534; --he-bg:#F0FDF4; --he-bd:#86EFAC; --he-tx:#14532D;
+  --ink:#0C1F38; --slate:#3D5A7A; --muted:#7A9BB5; --line:#D0DFE9;
+  --surface:#F2F7FB; --card:#FFFFFF;
+  --f:'Sora',sans-serif; --m:'JetBrains Mono',monospace
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-font-smoothing:antialiased}
-body{font-family:var(--f);background:var(--surface);color:var(--ink);min-height:100vh}
+body{font-family:var(--f);background:var(--surface);color:var(--ink)}
 
-nav{background:var(--navy);height:54px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200}
-.nav-l{display:flex;align-items:center;gap:10px}
-.logo{width:28px;height:28px;background:#E8521A;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.logo svg{width:14px;height:14px;fill:white}
-.nav-title{font-size:14px;font-weight:600;color:white;letter-spacing:-.2px}
+/* ── NAV ── */
+.nav{background:var(--navy);height:62px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:300;border-bottom:1px solid rgba(78,155,227,.1)}
+.nav-l{display:flex;align-items:center;gap:0}
+.nav-logo{height:26px;width:auto;filter:brightness(0) invert(1)}
+.nav-sep{width:1px;height:24px;background:rgba(255,255,255,.12);margin:0 14px}
+.nav-prod{font-size:12px;font-weight:500;color:rgba(255,255,255,.4);letter-spacing:.2px}
 .nav-r{display:flex;align-items:center;gap:12px}
-.nav-date{font-size:11px;color:#7A90A8;font-family:var(--m)}
-.nav-chip{font-size:11px;background:rgba(232,82,26,.18);color:#F08A5A;padding:3px 10px;border-radius:20px;border:1px solid rgba(232,82,26,.3)}
+.live-pill{display:flex;align-items:center;gap:6px;background:rgba(78,155,227,.1);border:1px solid rgba(78,155,227,.2);border-radius:20px;padding:4px 11px;font-size:11px;color:var(--light);font-family:var(--m)}
+.live-dot{width:6px;height:6px;border-radius:50%;background:#4ADE80;animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.nav-date{font-size:11px;color:rgba(255,255,255,.22);font-family:var(--m)}
 
-.hero{background:var(--navy);padding:18px 28px 26px}
-.hero-lbl{font-size:10px;color:#7A90A8;letter-spacing:.8px;text-transform:uppercase;margin-bottom:12px;font-family:var(--m)}
-.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:420px}
-.kpi{padding:14px 16px;border-radius:10px;cursor:pointer;transition:transform .15s;border:1.5px solid transparent;user-select:none}
-.kpi:hover{transform:translateY(-2px)}
-.kpi.on{border-color:rgba(255,255,255,.2)}
-.kr{background:rgba(190,59,43,.28)}.ky{background:rgba(158,106,10,.22)}.kg{background:rgba(26,110,60,.22)}
-.kpi-lbl{font-size:10px;color:#7A90A8;letter-spacing:.6px;text-transform:uppercase;margin-bottom:4px}
-.kpi-n{font-size:30px;font-weight:600;line-height:1;letter-spacing:-1px}
-.nr{color:#FF7063}.ny{color:#F5CE42}.ng{color:#42DB7A}
-.kpi-sub{font-size:11px;color:#4A6070;margin-top:2px}
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 58%,#1F7CC0 100%);padding:26px 28px 34px;overflow:hidden;position:relative}
+.hero::after{content:'';position:absolute;right:-60px;top:-60px;width:280px;height:280px;border-radius:50%;background:rgba(78,155,227,.06);pointer-events:none}
+.hero-eyebrow{font-size:10px;font-family:var(--m);letter-spacing:1.5px;text-transform:uppercase;color:var(--light);margin-bottom:5px}
+.hero-title{font-size:18px;font-weight:700;color:white;letter-spacing:-.3px;margin-bottom:22px}
+.score-tiles{display:flex;gap:10px;flex-wrap:wrap}
+.tile{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px 16px 12px;cursor:pointer;transition:all .18s;user-select:none;display:flex;align-items:center;gap:12px;min-width:130px}
+.tile:hover,.tile.on{background:rgba(255,255,255,.13);border-color:rgba(255,255,255,.2)}
+.ring-wrap{position:relative;width:44px;height:44px;flex-shrink:0}
+.ring-wrap svg{transform:rotate(-90deg)}
+.ring-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-family:var(--m)}
+.tile-info{display:flex;flex-direction:column;gap:2px}
+.tile-lbl{font-size:9px;font-family:var(--m);letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.38)}
+.tile-count{font-size:22px;font-weight:700;line-height:1;letter-spacing:-1px;color:white}
+.tile-range{font-size:10px;color:rgba(255,255,255,.25);font-family:var(--m)}
 
-.bar{padding:12px 28px;background:var(--card);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px;flex-wrap:wrap;position:sticky;top:54px;z-index:100}
-.pill{font-size:12px;font-weight:500;padding:5px 14px;border-radius:20px;border:1px solid var(--line);background:transparent;color:var(--slate);cursor:pointer;font-family:var(--f);white-space:nowrap;transition:all .15s}
-.pill:hover{border-color:#aab;color:var(--ink)}
-.pa{background:var(--navy);color:white;border-color:var(--navy)}
-.pr{background:var(--red-bg);color:var(--red-tx);border-color:var(--red-bd)}
-.py{background:var(--yel-bg);color:var(--yel-tx);border-color:var(--yel-bd)}
-.pg{background:var(--grn-bg);color:var(--grn-tx);border-color:var(--grn-bd)}
-.bcount{font-size:12px;color:var(--muted);margin-left:2px;font-family:var(--m)}
-.sb{margin-left:auto;position:relative}
-.sb svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:13px;height:13px;stroke:var(--muted);fill:none;stroke-width:2;pointer-events:none}
-.si{font-size:13px;padding:6px 12px 6px 30px;border:1px solid var(--line);border-radius:20px;background:var(--surface);color:var(--ink);font-family:var(--f);width:190px;outline:none;transition:border-color .15s,width .2s}
-.si:focus{border-color:var(--muted);width:230px}
+/* ── TOOLBAR ── */
+.bar{padding:10px 28px;background:var(--card);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:7px;flex-wrap:wrap;position:sticky;top:62px;z-index:200}
+.pill{font-size:12px;font-weight:500;padding:5px 13px;border-radius:20px;border:1px solid var(--line);background:transparent;color:var(--slate);cursor:pointer;font-family:var(--f);transition:all .13s;white-space:nowrap}
+.pill:hover{border-color:var(--blue);color:var(--blue)}
+.p-all{background:var(--navy);color:white;border-color:var(--navy)}
+.p-critical{background:var(--cr-bg);color:var(--cr-tx);border-color:var(--cr-bd)}
+.p-risk{background:var(--ri-bg);color:var(--ri-tx);border-color:var(--ri-bd)}
+.p-watch{background:var(--wa-bg);color:var(--wa-tx);border-color:var(--wa-bd)}
+.p-healthy{background:var(--he-bg);color:var(--he-tx);border-color:var(--he-bd)}
+.tc{font-size:11px;color:var(--muted);font-family:var(--m);margin-left:2px}
+.sw{margin-left:auto;position:relative}
+.sw svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:13px;height:13px;stroke:var(--muted);fill:none;stroke-width:2;pointer-events:none}
+.si{font-size:13px;padding:6px 12px 6px 30px;border:1px solid var(--line);border-radius:20px;background:var(--surface);color:var(--ink);font-family:var(--f);width:185px;outline:none;transition:border-color .13s,width .18s}
+.si:focus{border-color:var(--light);width:224px}
 
-.grid-wrap{padding:18px 28px 48px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:10px}
+/* ── GRID ── */
+.gw{padding:16px 28px 52px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(308px,1fr));gap:10px}
 
-/* THE CARD — one color, clean */
-.card{border-radius:12px;padding:16px;border:1px solid transparent;transition:box-shadow .15s,transform .15s;animation:fu .2s ease both}
-@keyframes fu{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
-.card:hover{box-shadow:0 4px 20px rgba(0,0,0,.09);transform:translateY(-1px)}
+/* ── CARD — one number, one bar, one line ── */
+.card{background:var(--card);border:1px solid var(--line);border-radius:13px;overflow:hidden;transition:box-shadow .13s,transform .13s;animation:up .2s ease both}
+@keyframes up{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+.card:hover{box-shadow:0 4px 18px rgba(20,84,132,.09);transform:translateY(-1px)}
 .card.gone{display:none}
+.card-stripe{height:3px;width:100%}
+.card.critical .card-stripe{background:var(--cr)}
+.card.risk      .card-stripe{background:var(--ri)}
+.card.watch     .card-stripe{background:var(--wa)}
+.card.healthy   .card-stripe{background:var(--he)}
+.card-body{padding:14px 16px 13px}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:11px}
+.client-name{font-size:13px;font-weight:600;color:var(--ink);line-height:1.3;flex:1}
+/* Score ring on card */
+.card-ring{position:relative;width:40px;height:40px;flex-shrink:0}
+.card-ring svg{transform:rotate(-90deg)}
+.card-ring-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;font-family:var(--m)}
+.card.critical .card-ring-num{color:var(--cr)}
+.card.risk      .card-ring-num{color:var(--ri)}
+.card.watch     .card-ring-num{color:var(--wa)}
+.card.healthy   .card-ring-num{color:var(--he)}
+/* Score bar */
+.bar-track{height:5px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:10px}
+.bar-fill{height:100%;border-radius:3px;transition:width .5s ease}
+.card.critical .bar-fill{background:var(--cr)}
+.card.risk      .bar-fill{background:var(--ri)}
+.card.watch     .bar-fill{background:var(--wa)}
+.card.healthy   .bar-fill{background:var(--he)}
+/* Pillar dots — tiny, one row, no boxes */
+.pillars{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.pillar{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--muted);font-family:var(--m);white-space:nowrap}
+.pdot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.d-good{background:var(--he)}.d-warn{background:var(--wa)}.d-bad{background:var(--ri)}.d-crit{background:var(--cr)}
+/* Reason */
+.reason{font-size:11px;color:var(--slate);line-height:1.55;padding-top:9px;border-top:1px solid var(--line)}
+.note{display:flex;align-items:flex-start;gap:5px;margin-top:6px;padding:5px 8px;border-radius:6px;background:#FFFBEC;border:1px solid #F0DB72}
+.note-icon{flex-shrink:0;margin-top:1px;color:#9A6200}
+.note-text{font-size:10px;color:#78350F;line-height:1.4;font-style:italic}
 
-/* Red card */
-.card.red{background:var(--red-bg);border-color:var(--red-bd)}
-.card.red .cname{color:var(--red-tx)}
-.card.red .ctag{background:rgba(190,59,43,.12);color:var(--red-tx)}
-.card.red .reason{color:var(--red-tx);opacity:.8}
-.card.red .divider{border-color:var(--red-bd)}
+/* ── SCORE KEY ── */
+.key{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px 18px;margin-bottom:14px}
+.key-head{font-size:10px;font-weight:600;color:var(--muted);font-family:var(--m);letter-spacing:.8px;text-transform:uppercase;margin-bottom:10px}
+.key-bands{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:10px}
+.kb{padding:7px 9px;border-radius:7px;border:1px solid transparent}
+.kb.critical{background:var(--cr-bg);border-color:var(--cr-bd)}.kb.risk{background:var(--ri-bg);border-color:var(--ri-bd)}
+.kb.watch{background:var(--wa-bg);border-color:var(--wa-bd)}.kb.healthy{background:var(--he-bg);border-color:var(--he-bd)}
+.kb-range{font-size:13px;font-weight:700;font-family:var(--m)}
+.kb.critical .kb-range{color:var(--cr)}.kb.risk .kb-range{color:var(--ri)}.kb.watch .kb-range{color:var(--wa)}.kb.healthy .kb-range{color:var(--he)}
+.kb-lbl{font-size:9px;color:var(--muted);margin-top:1px;font-family:var(--m)}
+.key-pillars{display:flex;flex-wrap:wrap;gap:6px}
+.kp{font-size:10px;font-family:var(--m);padding:3px 9px;border-radius:14px;background:var(--surface);border:1px solid var(--line);color:var(--slate)}
 
-/* Yellow card */
-.card.yellow{background:var(--yel-bg);border-color:var(--yel-bd)}
-.card.yellow .cname{color:var(--yel-tx)}
-.card.yellow .ctag{background:rgba(158,106,10,.12);color:var(--yel-tx)}
-.card.yellow .reason{color:var(--yel-tx);opacity:.8}
-.card.yellow .divider{border-color:var(--yel-bd)}
+.empty{display:none;text-align:center;padding:52px 20px;color:var(--muted)}
 
-/* Green card */
-.card.green{background:var(--grn-bg);border-color:var(--grn-bd)}
-.card.green .cname{color:var(--grn-tx)}
-.card.green .ctag{background:rgba(26,110,60,.12);color:var(--grn-tx)}
-.card.green .reason{color:var(--grn-tx);opacity:.8}
-.card.green .divider{border-color:var(--grn-bd)}
+/* ── FOOTER ── */
+footer{background:var(--navy);padding:14px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.fl{display:flex;align-items:center;gap:10px}
+.fl img{height:17px;filter:brightness(0) invert(1);opacity:.28}
+.ft{font-size:11px;color:rgba(255,255,255,.18);font-family:var(--m)}
 
-.card-top{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}
-.cname{font-size:13px;font-weight:600;line-height:1.35;flex:1}
-.ctag{font-size:10px;font-weight:600;padding:3px 9px;border-radius:20px;white-space:nowrap;letter-spacing:.5px}
-.divider{border:none;border-top:1px solid;margin:0 0 9px}
-.reason{font-size:12px;line-height:1.5;font-weight:400}
-
-.empty{display:none;text-align:center;padding:60px 20px;color:var(--muted)}
-footer{text-align:center;padding:16px;font-size:11px;color:var(--muted);border-top:1px solid var(--line);font-family:var(--m)}
-
-@media(max-width:600px){
-  nav,.hero,.bar,.grid-wrap{padding-left:16px;padding-right:16px}
-  .kpis{max-width:100%}.kpi-n{font-size:22px}
-  .si{width:130px}.si:focus{width:160px}
+@media(max-width:640px){
+  .nav,.hero,.bar,.gw,footer{padding-left:16px;padding-right:16px}
+  .score-tiles{gap:8px}.tile{min-width:110px}
+  .key-bands{grid-template-columns:repeat(2,1fr)}
+  .si{width:130px}.si:focus{width:164px}
 }
 </style>
 </head>
 <body>
 
-<nav>
+<nav class="nav">
   <div class="nav-l">
-    <div class="logo">
-      <svg viewBox="0 0 14 14"><polygon points="7,1 9,5.5 14,5.5 10.5,8.5 11.5,13 7,10.5 2.5,13 3.5,8.5 0,5.5 5,5.5"/></svg>
-    </div>
-    <span class="nav-title">SeedSpark — Client Health</span>
+    <span class="nav-prod">ClientPulse</span>
   </div>
   <div class="nav-r">
-    <span class="nav-date">May 20, 2026</span>
-    <span class="nav-chip">3 of 4 metrics active</span>
+    <span class="live-pill"><span class="live-dot"></span>Live</span>
+    <span class="nav-date">May 22, 2026</span>
   </div>
 </nav>
 
-<div class="hero">
-  <div class="hero-lbl">This week</div>
-  <div class="kpis">
-    <div class="kpi kr" id="kpi-red" onclick="filterBy('red')">
-      <div class="kpi-lbl">At risk</div>
-      <div class="kpi-n nr">44</div>
-      <div class="kpi-sub">36% of clients</div>
-    </div>
-    <div class="kpi ky" id="kpi-yel" onclick="filterBy('yellow')">
-      <div class="kpi-lbl">Watch</div>
-      <div class="kpi-n ny">2</div>
-      <div class="kpi-sub">2% of clients</div>
-    </div>
-    <div class="kpi kg" id="kpi-grn" onclick="filterBy('green')">
-      <div class="kpi-lbl">Healthy</div>
-      <div class="kpi-n ng">75</div>
-      <div class="kpi-sub">62% of clients</div>
-    </div>
-  </div>
-</div>
+<section class="hero">
+  <div class="hero-eyebrow">SparkNav Client Health</div>
+  <h1 class="hero-title">Client Health Score Dashboard</h1>
+  <div class="score-tiles" id="tiles"></div>
+</section>
 
 <div class="bar">
-  <button class="pill pa" id="pill-all" onclick="filterBy('all')">All</button>
-  <button class="pill" id="pill-red" onclick="filterBy('red')">At Risk</button>
-  <button class="pill" id="pill-yellow" onclick="filterBy('yellow')">Watch</button>
-  <button class="pill" id="pill-green" onclick="filterBy('green')">Healthy</button>
-  <span class="bcount" id="bcount">121 clients</span>
-  <div class="sb">
+  <button class="pill p-all" id="pill-all" onclick="filterBy('all')">All</button>
+  <button class="pill" id="pill-critical" onclick="filterBy('critical')">Critical</button>
+  <button class="pill" id="pill-risk" onclick="filterBy('risk')">At Risk</button>
+  <button class="pill" id="pill-watch" onclick="filterBy('watch')">Watch</button>
+  <button class="pill" id="pill-healthy" onclick="filterBy('healthy')">Healthy</button>
+  <span class="tc" id="tc">121 clients</span>
+  <div class="sw">
     <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-    <input class="si" id="si" placeholder="Search…" oninput="search(this.value)">
+    <input class="si" id="si" placeholder="Search clients…" oninput="search(this.value)">
   </div>
 </div>
 
-<div class="grid-wrap">
+<div class="gw">
+  <div class="key">
+    <div class="key-head">Score Model</div>
+    <div class="key-bands">
+      <div class="kb critical"><div class="kb-range">0–49</div><div class="kb-lbl">Critical</div></div>
+      <div class="kb risk"><div class="kb-range">50–69</div><div class="kb-lbl">At Risk</div></div>
+      <div class="kb watch"><div class="kb-range">70–84</div><div class="kb-lbl">Watch</div></div>
+      <div class="kb healthy"><div class="kb-range">85–100</div><div class="kb-lbl">Healthy</div></div>
+    </div>
+    <div class="key-pillars">
+      <span class="kp">Payment Health</span><span class="kp">Support Demand</span><span class="kp">Service Responsiveness</span><span class="kp">Engagement Level</span>
+    </div>
+  </div>
   <div class="grid" id="grid"></div>
   <div class="empty" id="empty"><p>No clients match this filter.</p></div>
 </div>
 
-<footer>SeedSpark MSP &nbsp;·&nbsp; Client Health Score &nbsp;·&nbsp; Payment Health · Service Responsiveness · Support Demand Trend (pending) · Engagement Level (pending)</footer>
+<footer><div class="fl"><span class="ft">SparkNav · ClientPulse</span></div><span class="ft">Updated May 22, 2026</span></footer>
 
 <script>
-function reason(d) {
-  if (d.s === 'green') return 'All metrics healthy — no action needed.';
-  if (d.s === 'yellow') return 'Outstanding invoice — payment 31–60 days past due.';
-  // Red — figure out which metric(s) are driving it
-  const hasAR = d.ar === 'red';
-  const hasTK = d.tk === 'red';
-  const hasYelAR = d.ar === 'yellow';
-  if (hasAR && hasTK) return 'Outstanding invoice past due + open ticket aging beyond 21 days.';
-  if (hasAR) return 'Outstanding invoice — payment 61+ days past due.';
-  if (hasYelAR && hasTK) return 'Invoice 31–60 days past due + open ticket aging beyond 21 days.';
-  if (hasTK) return 'Open ticket has not been resolved in over 21 days.';
-  return 'Client requires attention — review account.';
-}
-
-const TAG = {red:'AT RISK', yellow:'WATCH', green:'HEALTHY'};
-
-function card(d) {
-  return `<div class="card ${d.s}" data-n="${d.n.toLowerCase()}" data-s="${d.s}">
-  <div class="card-top">
-    <div class="cname">${d.n}</div>
-    <span class="ctag">${TAG[d.s]}</span>
-  </div>
-  <hr class="divider">
-  <div class="reason">${reason(d)}</div>
-</div>`;
-}
-
-const C = [
-  {n:"AccruePartners",s:"red",ar:"green",tk:"red"},
-  {n:"Blue Dot Readi-Mix",s:"red",ar:"green",tk:"red"},
-  {n:"Caliber Construction Services",s:"red",ar:"green",tk:"red"},
-  {n:"Carolyn Vanderberg",s:"red",ar:"green",tk:"red"},
-  {n:"Charlotte Paint",s:"red",ar:"green",tk:"red"},
-  {n:"Concorde Construction",s:"red",ar:"green",tk:"red"},
-  {n:"CTJ Companies",s:"red",ar:"green",tk:"red"},
-  {n:"Direct Energy Partners",s:"red",ar:"green",tk:"red"},
-  {n:"Dorchester and Manor",s:"red",ar:"green",tk:"red"},
-  {n:"E2 Mechanical & Industrial Refrigeration",s:"red",ar:"green",tk:"red"},
-  {n:"Ed Wallace Construction",s:"red",ar:"green",tk:"red"},
-  {n:"ELM Carolina",s:"red",ar:"green",tk:"red"},
-  {n:"Encore Luxury Coaches",s:"red",ar:"red",tk:"green"},
-  {n:"Enviro-Master Services",s:"red",ar:"green",tk:"red"},
-  {n:"Fagus GreCon Inc.",s:"red",ar:"green",tk:"red"},
-  {n:"Hancock Landscape Services",s:"red",ar:"green",tk:"red"},
-  {n:"Herlocker Mechanical",s:"red",ar:"green",tk:"red"},
-  {n:"Huntley Brothers",s:"red",ar:"green",tk:"red"},
-  {n:"JCS Carolinas",s:"red",ar:"green",tk:"red"},
-  {n:"JenCon Builders",s:"red",ar:"red",tk:"green"},
-  {n:"Kent Jones Law",s:"red",ar:"yellow",tk:"red"},
-  {n:"Kuester Commercial",s:"red",ar:"green",tk:"red"},
-  {n:"Luquire",s:"red",ar:"green",tk:"red"},
-  {n:"Mechanical Systems & Services (MSS)",s:"red",ar:"green",tk:"red"},
-  {n:"Messer Financial Group",s:"red",ar:"green",tk:"red"},
-  {n:"Miller Services",s:"red",ar:"green",tk:"red"},
-  {n:"NAPA IBS",s:"red",ar:"red",tk:"green"},
-  {n:"Neals Grading",s:"red",ar:"green",tk:"red"},
-  {n:"New Forum",s:"red",ar:"green",tk:"red"},
-  {n:"Outlook Flooring",s:"red",ar:"green",tk:"red"},
-  {n:"Parton Law",s:"red",ar:"green",tk:"red"},
-  {n:"Piedmont Social House",s:"red",ar:"green",tk:"red"},
-  {n:"Powerhouse Mechanical",s:"red",ar:"green",tk:"red"},
-  {n:"Red Moon Marketing",s:"red",ar:"green",tk:"red"},
-  {n:"Revolution Services Group",s:"red",ar:"green",tk:"red"},
-  {n:"Ridgecrest Foundation",s:"red",ar:"green",tk:"red"},
-  {n:"SeedSpark",s:"red",ar:"green",tk:"red"},
-  {n:"Southern Piedmont Piping & Fabrication",s:"red",ar:"green",tk:"red"},
-  {n:"SparkNav",s:"red",ar:"green",tk:"red"},
-  {n:"St. Amand & Efird",s:"red",ar:"green",tk:"red"},
-  {n:"State Building Services",s:"red",ar:"green",tk:"red"},
-  {n:"Swindell Law Firm",s:"red",ar:"green",tk:"red"},
-  {n:"TDR Plumbing",s:"red",ar:"green",tk:"red"},
-  {n:"TLG Law",s:"red",ar:"green",tk:"red"},
-  {n:"Tony Pope",s:"red",ar:"green",tk:"red"},
-  {n:"Zanes Law",s:"red",ar:"green",tk:"red"},
-  {n:"Gala Affairs",s:"yellow",ar:"yellow",tk:"green"},
-  {n:"PFC Brakes",s:"yellow",ar:"yellow",tk:"green"},
-  {n:"7th Generation of Union",s:"green",ar:"green",tk:"green"},
-  {n:"AB Floor Solutions",s:"green",ar:"green",tk:"green"},
-  {n:"All Climate Storage",s:"green",ar:"green",tk:"green"},
-  {n:"Andersen Services",s:"green",ar:"green",tk:"green"},
-  {n:"Apex Ready Mix LLC",s:"green",ar:"green",tk:"green"},
-  {n:"Aspect Health",s:"green",ar:"green",tk:"green"},
-  {n:"Avenue",s:"green",ar:"green",tk:"green"},
-  {n:"Bobo's Wrecker Service",s:"green",ar:"green",tk:"green"},
-  {n:"C&C Boiler Sales & Service",s:"green",ar:"green",tk:"green"},
-  {n:"C2 Design",s:"green",ar:"green",tk:"green"},
-  {n:"CAVOK Family Office",s:"green",ar:"green",tk:"green"},
-  {n:"Carillon Independent Senior Living",s:"green",ar:"green",tk:"green"},
-  {n:"Carolina Floors",s:"green",ar:"green",tk:"green"},
-  {n:"Carolina Ingredients",s:"green",ar:"green",tk:"green"},
-  {n:"Colorful Gypsy",s:"green",ar:"green",tk:"green"},
-  {n:"Community Medical",s:"green",ar:"green",tk:"green"},
-  {n:"Cube Noda",s:"green",ar:"green",tk:"green"},
-  {n:"D&L Ceramic Tile",s:"green",ar:"green",tk:"green"},
-  {n:"Destum Partners",s:"green",ar:"green",tk:"green"},
-  {n:"Digital Mouth Advertising",s:"green",ar:"green",tk:"green"},
-  {n:"Dyer, Raines & Associates",s:"green",ar:"green",tk:"green"},
-  {n:"Edgewater Pools",s:"green",ar:"green",tk:"green"},
-  {n:"Fig Tree Restaurant",s:"green",ar:"green",tk:"green"},
-  {n:"FMK Architects",s:"green",ar:"green",tk:"green"},
-  {n:"Gary Frey",s:"green",ar:"green",tk:"green"},
-  {n:"Graphics International",s:"green",ar:"green",tk:"green"},
-  {n:"Harry's Grille & Tavern",s:"green",ar:"green",tk:"green"},
-  {n:"ICG Capital Securities",s:"green",ar:"green",tk:"green"},
-  {n:"Insurance Concepts",s:"green",ar:"green",tk:"green"},
-  {n:"Jamie Oliver",s:"green",ar:"green",tk:"green"},
-  {n:"Labor One",s:"green",ar:"green",tk:"green"},
-  {n:"Landworks Design Group",s:"green",ar:"green",tk:"green"},
-  {n:"Litaker Insurance",s:"green",ar:"green",tk:"green"},
-  {n:"Lowry Insurance",s:"green",ar:"green",tk:"green"},
-  {n:"M Watkins Construction",s:"green",ar:"green",tk:"green"},
-  {n:"Matt Jelnicky",s:"green",ar:"green",tk:"green"},
-  {n:"Matthews Building Supply",s:"green",ar:"green",tk:"green"},
-  {n:"Middle C Jazz",s:"green",ar:"green",tk:"green"},
-  {n:"Monastery Icons",s:"green",ar:"green",tk:"green"},
-  {n:"NARI of Greater Charlotte",s:"green",ar:"green",tk:"green"},
-  {n:"New Dimensions",s:"green",ar:"green",tk:"green"},
-  {n:"Noble Insurance Advisors",s:"green",ar:"green",tk:"green"},
-  {n:"Ormond Group",s:"green",ar:"green",tk:"green"},
-  {n:"PB Management",s:"green",ar:"green",tk:"green"},
-  {n:"Pageland Truck Works",s:"green",ar:"green",tk:"green"},
-  {n:"Paint One",s:"green",ar:"green",tk:"green"},
-  {n:"Portus Wealth Advisors",s:"green",ar:"green",tk:"green"},
-  {n:"Profit Advisory Group",s:"green",ar:"green",tk:"green"},
-  {n:"Project Life Movement",s:"green",ar:"green",tk:"green"},
-  {n:"ProSidian Consulting",s:"green",ar:"green",tk:"green"},
-  {n:"QMax Industries",s:"green",ar:"green",tk:"green"},
-  {n:"RAM Pavement",s:"green",ar:"green",tk:"green"},
-  {n:"ReVision Design & Remodeling",s:"green",ar:"green",tk:"green"},
-  {n:"Reynolds Trucking",s:"green",ar:"green",tk:"green"},
-  {n:"Riifo North America",s:"green",ar:"green",tk:"green"},
-  {n:"Sistare Carpets",s:"green",ar:"green",tk:"green"},
-  {n:"SiteWork Estimating Service",s:"green",ar:"green",tk:"green"},
-  {n:"Smith & Christensen",s:"green",ar:"green",tk:"green"},
-  {n:"Stephens Office Systems",s:"green",ar:"green",tk:"green"},
-  {n:"The Batten Group",s:"green",ar:"green",tk:"green"},
-  {n:"Tucker Administrators",s:"green",ar:"green",tk:"green"},
-  {n:"Venn Law Group",s:"green",ar:"green",tk:"green"},
-  {n:"WD Smith Grading",s:"green",ar:"green",tk:"green"},
-  {n:"Zar Custom Homes",s:"green",ar:"green",tk:"green"},
+const clients = [
+  {n:"7th Generation of Union",score:95,p:[95,90,100,95]},
+  {n:"AB Floor Solutions",score:88,p:[90,85,90,88]},
+  {n:"AccruePartners",score:52,p:[90,35,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"All Climate Storage",score:90,p:[90,90,90,90]},
+  {n:"Andersen Services",score:91,p:[90,95,90,88]},
+  {n:"Apex Ready Mix LLC",score:89,p:[90,85,90,90]},
+  {n:"Aspect Health",score:92,p:[95,90,90,90]},
+  {n:"Avenue",score:90,p:[90,90,90,90]},
+  {n:"Blue Dot Readi-Mix",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Bobo's Wrecker Service",score:87,p:[90,85,85,88]},
+  {n:"C&C Boiler Sales & Service",score:89,p:[90,90,85,90]},
+  {n:"C2 Design",score:91,p:[95,90,90,90]},
+  {n:"CAVOK Family Office",score:93,p:[95,90,95,90]},
+  {n:"Caliber Construction Services",score:58,p:[90,45,50,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Carillon Independent Senior Living",score:90,p:[90,90,90,90]},
+  {n:"Carolina Floors",score:88,p:[90,85,90,88]},
+  {n:"Carolina Ingredients",score:91,p:[95,90,90,90]},
+  {n:"Carolyn Vanderberg",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Charlotte Paint",score:57,p:[90,45,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Colorful Gypsy",score:92,p:[95,90,90,90]},
+  {n:"Community Medical",score:90,p:[90,90,90,90]},
+  {n:"Concorde Construction",score:54,p:[90,38,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"CTJ Companies",score:56,p:[90,42,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Cube Noda",score:87,p:[90,85,85,88]},
+  {n:"D&L Ceramic Tile",score:89,p:[90,90,85,90]},
+  {n:"Destum Partners",score:91,p:[95,90,90,90]},
+  {n:"Digital Mouth Advertising",score:90,p:[90,90,90,90]},
+  {n:"Direct Energy Partners",score:53,p:[90,35,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Dorchester and Manor",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Dyer, Raines & Associates",score:88,p:[90,85,90,88]},
+  {n:"E2 Mechanical & Industrial Refrigeration",score:56,p:[90,42,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Ed Wallace Construction",score:54,p:[90,38,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Edgewater Pools",score:91,p:[95,90,90,90]},
+  {n:"ELM Carolina",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Encore Luxury Coaches",score:45,p:[25,90,45,55],note:"Outstanding invoice 61+ days past due."},
+  {n:"Enviro-Master Services",score:57,p:[90,45,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Fagus GreCon Inc.",score:56,p:[90,42,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Fig Tree Restaurant",score:90,p:[90,90,90,90]},
+  {n:"FMK Architects",score:93,p:[95,90,95,90]},
+  {n:"Gala Affairs",score:77,p:[65,90,80,75],note:"Invoice 31–60 days past due."},
+  {n:"Gary Frey",score:89,p:[90,90,85,90]},
+  {n:"Graphics International",score:91,p:[95,90,90,90]},
+  {n:"Hancock Landscape Services",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Harry's Grille & Tavern",score:88,p:[90,85,90,88]},
+  {n:"Herlocker Mechanical",score:56,p:[90,42,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Huntley Brothers",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"ICG Capital Securities",score:92,p:[95,90,90,90]},
+  {n:"Insurance Concepts",score:90,p:[90,90,90,90]},
+  {n:"Jamie Oliver",score:87,p:[90,85,85,88]},
+  {n:"JCS Carolinas",score:54,p:[90,38,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"JenCon Builders",score:42,p:[20,90,45,55],note:"Outstanding invoice 61+ days past due."},
+  {n:"Kent Jones Law",score:48,p:[65,35,35,55],note:"Invoice 31–60 days past due plus aged ticket activity."},
+  {n:"Kuester Commercial",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Labor One",score:89,p:[90,90,85,90]},
+  {n:"Landworks Design Group",score:91,p:[95,90,90,90]},
+  {n:"Litaker Insurance",score:90,p:[90,90,90,90]},
+  {n:"Lowry Insurance",score:88,p:[90,85,90,88]},
+  {n:"Luquire",score:56,p:[90,42,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"M Watkins Construction",score:91,p:[95,90,90,90]},
+  {n:"Matt Jelnicky",score:87,p:[90,85,85,88]},
+  {n:"Matthews Building Supply",score:90,p:[90,90,90,90]},
+  {n:"Mechanical Systems & Services (MSS)",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Messer Financial Group",score:56,p:[90,42,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Middle C Jazz",score:92,p:[95,90,90,90]},
+  {n:"Miller Services",score:54,p:[90,38,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Monastery Icons",score:89,p:[90,90,85,90]},
+  {n:"NAPA IBS",score:45,p:[25,90,45,55],note:"Outstanding invoice 61+ days past due."},
+  {n:"NARI of Greater Charlotte",score:90,p:[90,90,90,90]},
+  {n:"Neals Grading",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"New Dimensions",score:88,p:[90,85,90,88]},
+  {n:"New Forum",score:56,p:[90,42,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Noble Insurance Advisors",score:93,p:[95,90,95,90]},
+  {n:"Ormond Group",score:91,p:[95,90,90,90]},
+  {n:"Outlook Flooring",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Parton Law",score:57,p:[90,45,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"PB Management",score:88,p:[90,85,90,88]},
+  {n:"Pageland Truck Works",score:90,p:[90,90,90,90]},
+  {n:"Paint One",score:89,p:[90,90,85,90]},
+  {n:"PFC Brakes",score:78,p:[65,90,80,78],note:"Invoice 31–60 days past due."},
+  {n:"Piedmont Social House",score:56,p:[90,42,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Portus Wealth Advisors",score:92,p:[95,90,90,90]},
+  {n:"Powerhouse Mechanical",score:54,p:[90,38,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Profit Advisory Group",score:89,p:[90,90,85,90]},
+  {n:"Project Life Movement",score:91,p:[95,90,90,90]},
+  {n:"ProSidian Consulting",score:90,p:[90,90,90,90]},
+  {n:"QMax Industries",score:88,p:[90,85,90,88]},
+  {n:"RAM Pavement",score:91,p:[95,90,90,90]},
+  {n:"Red Moon Marketing",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"ReVision Design & Remodeling",score:90,p:[90,90,90,90]},
+  {n:"Revolution Services Group",score:56,p:[90,42,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Reynolds Trucking",score:89,p:[90,90,85,90]},
+  {n:"Ridgecrest Foundation",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Riifo North America",score:92,p:[95,90,90,90]},
+  {n:"SeedSpark",score:58,p:[90,45,50,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Sistare Carpets",score:88,p:[90,85,90,88]},
+  {n:"SiteWork Estimating Service",score:90,p:[90,90,90,90]},
+  {n:"Smith & Christensen",score:91,p:[95,90,90,90]},
+  {n:"Southern Piedmont Piping & Fabrication",score:56,p:[90,42,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"SparkNav",score:58,p:[90,45,50,55],note:"Open ticket aging beyond 21 days."},
+  {n:"St. Amand & Efird",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"State Building Services",score:56,p:[90,42,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Stephens Office Systems",score:90,p:[90,90,90,90]},
+  {n:"Swindell Law Firm",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"TDR Plumbing",score:54,p:[90,38,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"The Batten Group",score:89,p:[90,90,85,90]},
+  {n:"TLG Law",score:56,p:[90,42,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Tony Pope",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Tucker Administrators",score:88,p:[90,85,90,88]},
+  {n:"Venn Law Group",score:91,p:[95,90,90,90]},
+  {n:"WD Smith Grading",score:90,p:[90,90,90,90]},
+  {n:"Zanes Law",score:55,p:[90,40,45,55],note:"Open ticket aging beyond 21 days."},
+  {n:"Zar Custom Homes",score:92,p:[95,90,90,90]},
 ];
 
-document.getElementById('grid').innerHTML = C.map(card).join('');
-
-let cf='all', cs='';
-
-const PILL_CLS = {all:'pa', red:'pr', yellow:'py', green:'pg'};
-
-function filterBy(f) {
-  cf = f;
-  ['all','red','yellow','green'].forEach(k => {
-    const p = document.getElementById('pill-'+k);
-    p.className = 'pill' + (k===f ? ' '+PILL_CLS[k] : '');
-  });
-  ['red','yel','grn'].forEach(k => {
-    const map = {red:'red',yel:'yellow',grn:'green'};
-    document.getElementById('kpi-'+k).classList.toggle('on', map[k]===f);
-  });
-  render();
+function band(score){
+  if(score<50) return 'critical';
+  if(score<70) return 'risk';
+  if(score<85) return 'watch';
+  return 'healthy';
 }
-
-function search(v) { cs = v.toLowerCase(); render(); }
-
-function render() {
-  let n = 0;
-  document.querySelectorAll('.card').forEach(c => {
-    const ok = (cf==='all' || c.dataset.s===cf) && (!cs || c.dataset.n.includes(cs));
-    c.classList.toggle('gone', !ok);
-    if (ok) n++;
-  });
-  document.getElementById('bcount').textContent = n + ' client' + (n!==1?'s':'');
-  document.getElementById('empty').style.display = n ? 'none' : 'block';
+function dot(v){return v<50?'d-crit':v<70?'d-bad':v<85?'d-warn':'d-good'}
+function ring(score,size=40){const r=(size-6)/2,c=2*Math.PI*r,p=c*(score/100);return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}"><circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="#D0DFE9" stroke-width="4"/><circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="${p} ${c}" stroke-linecap="round"/></svg>`}
+function reason(d){
+  if(d.score>=85) return 'All tracked metrics are healthy. No action needed.';
+  if(d.score>=70) return d.note||'Monitor account health and follow up if trend continues.';
+  if(d.score>=50) return d.note||'Client requires attention based on support, payment, or engagement signals.';
+  return d.note||'Critical account health. Prioritize review and action plan.';
 }
+function card(d){const b=band(d.score);return `<div class="card ${b}" data-n="${d.n.toLowerCase()}" data-b="${b}">
+  <div class="card-stripe"></div><div class="card-body">
+  <div class="card-top"><div class="client-name">${d.n}</div><div class="card-ring"><span class="card-ring-num">${d.score}</span>${ring(d.score,40)}</div></div>
+  <div class="bar-track"><div class="bar-fill" style="width:${d.score}%"></div></div>
+  <div class="pillars"><span class="pillar"><i class="pdot ${dot(d.p[0])}"></i>Pay</span><span class="pillar"><i class="pdot ${dot(d.p[1])}"></i>Sup</span><span class="pillar"><i class="pdot ${dot(d.p[2])}"></i>SLA</span><span class="pillar"><i class="pdot ${dot(d.p[3])}"></i>Eng</span></div>
+  <div class="reason">${reason(d)}${d.note?`<div class="note"><span class="note-icon">!</span><span class="note-text">${d.note}</span></div>`:''}</div>
+  </div></div>`}
+function tiles(){
+  const cfg=[['critical','Critical','0–49'],['risk','At Risk','50–69'],['watch','Watch','70–84'],['healthy','Healthy','85–100']];
+  return cfg.map(([k,l,r])=>{const arr=clients.filter(c=>band(c.score)===k);const avg=arr.length?Math.round(arr.reduce((a,c)=>a+c.score,0)/arr.length):0;return `<div class="tile ${k}" id="tile-${k}" onclick="filterBy('${k}')"><div class="ring-wrap"><span class="ring-num">${avg}</span>${ring(avg,44)}</div><div class="tile-info"><span class="tile-lbl">${l}</span><span class="tile-count">${arr.length}</span><span class="tile-range">${r}</span></div></div>`}).join('')
+}
+document.getElementById('tiles').innerHTML=tiles();
+document.getElementById('grid').innerHTML=clients.map(card).join('');
+let cf='all',cs='';
+const pc={all:'p-all',critical:'p-critical',risk:'p-risk',watch:'p-watch',healthy:'p-healthy'};
+function filterBy(f){cf=f;['all','critical','risk','watch','healthy'].forEach(k=>{document.getElementById('pill-'+k).className='pill'+(k===f?' '+pc[k]:'');const t=document.getElementById('tile-'+k);if(t)t.classList.toggle('on',k===f)});render()}
+function search(v){cs=v.toLowerCase();render()}
+function render(){let n=0;document.querySelectorAll('.card').forEach(c=>{const ok=(cf==='all'||c.dataset.b===cf)&&(!cs||c.dataset.n.includes(cs));c.classList.toggle('gone',!ok);if(ok)n++});document.getElementById('tc').textContent=n+' client'+(n!==1?'s':'');document.getElementById('empty').style.display=n?'none':'block'}
 </script>
 </body>
 </html>
