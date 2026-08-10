@@ -28,6 +28,15 @@ ALIASES = {
     normalize("St. Amand & Efird"): normalize("St. Amand and Efird"),
 }
 
+APPROVED_TIER_OVERRIDES = {
+    "AccruePartners": "Tier 1",
+    "Blue Dot Readi-Mix": "Tier 1",
+    "Carolina Ingredients": "Tier 1",
+    "Enviro-Master Services": "Tier 1",
+    "Mechanical Systems & Services (MSS)": "Tier 1",
+    "Red Moon Marketing": "Tier 1",
+}
+
 
 class TableParser(HTMLParser):
     def __init__(self):
@@ -218,6 +227,11 @@ def build(master, ar, opened, volume):
         row["tier"] = "Tier 1" if index < first else "Tier 2" if index < second else "Tier 3"
         row["method"] = "Available Data Tier Score v1"
         clients[row["name"]]["tiering"] = row
+    for name, tier in APPROVED_TIER_OVERRIDES.items():
+        if name not in clients:
+            raise ValueError(f"Approved tier override client is missing: {name}")
+        tiering = clients[name]["tiering"]
+        tiering.update({"calculatedTier": tiering["tier"], "tier": tier, "override": True, "tierSource": "Approved manual assignment", "method": "Approved Tier Override"})
     return {"schemaVersion": "2.0", "generatedAt": datetime.now().astimezone().isoformat(), "scoringModel": "ClientPulse v1", "tieringModel": {"name": "Available Data Tier Score v1", "financialFactor": "Total outstanding AR balance", "financialWeight": 35 / 65, "ticketVolumeWeight": 30 / 65, "populationSplit": "Top, middle, and bottom thirds"}, "sources": {"ar": {"fileName": ar["fileName"], "asOf": ar["asOf"], "matchedClients": len(ar_grouped)}, "openTickets": {"fileName": opened["fileName"], "asOf": opened["asOf"], "matchedClients": len(open_grouped), **opened["diagnostics"]}, "ticketVolume": {"fileName": volume["fileName"], "periodStart": volume["periodStart"], "periodEnd": volume["periodEnd"], "matchedClients": len(volume_grouped), "rowCount": len(volume["tickets"])}}, "clients": clients, "exceptions": {"unmatchedAr": sorted(ar_unmatched), "unmatchedOpenTickets": sorted(open_unmatched), "unmatchedTicketVolume": sorted(volume_unmatched)}, "warnings": ["Open Tickets report may be truncated: high row count with only a short received-date span. Scores are provisional."] if provisional else []}
 
 
