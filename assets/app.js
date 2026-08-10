@@ -1,22 +1,37 @@
-import { createDataAdapter } from "./data-adapter.js?v=20260810-5";
-import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260810-5";
+import { createDataAdapter } from "./data-adapter.js?v=20260810-6";
+import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260810-6";
 import {
   calculateClientPulse, clearSnapshot, loadPublishedSnapshot, loadSnapshot, parseArReport, parseCalendar,
   parseOpenTickets, parseTicketVolume, saveSnapshot
-} from "./importer.js?v=20260810-5";
+} from "./importer.js?v=20260810-6";
 import {
   append, buildTableHead, el, emptyState, metricCard, populateSelect,
   portfolioRow, renderDistribution, renderMetricGrid, renderSimpleRows,
   statusPill, tierPanel, tierPill
-} from "./ui.js?v=20260810-5";
+} from "./ui.js?v=20260810-6";
 
 const PAGE_SIZE = 25;
+const RELEASE_CHECK_MS = 60_000;
 let currentPage = 1;
 let dashboardData;
 let calculations;
 let importedSnapshot;
 
 const $ = selector => document.querySelector(selector);
+async function redirectToCurrentRelease() {
+  try {
+    const response = await fetch(`./data/release.json?refresh=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) return false;
+    const manifest = await response.json();
+    const url = new URL(window.location.href);
+    if (!manifest.release || url.searchParams.get("release") === manifest.release) return false;
+    url.searchParams.set("release", manifest.release);
+    window.location.replace(url);
+    return true;
+  } catch {
+    return false;
+  }
+}
 const formatDate = value => {
   if (!value) return "No Data";
   const parsed = new Date(value);
@@ -413,6 +428,7 @@ function setupNavigation() {
 }
 
 async function initialize() {
+  if (await redirectToCurrentRelease()) return;
   const activateView = setupNavigation();
   try {
     dashboardData = await createDataAdapter().load();
@@ -451,6 +467,10 @@ async function initialize() {
     $("#dashboard").hidden = false;
     document.documentElement.dataset.appReady = "true";
     activateView();
+    window.setInterval(() => {
+      const hasPendingFiles = [...document.querySelectorAll('input[type="file"]')].some(input => input.files?.length);
+      if (!hasPendingFiles) redirectToCurrentRelease();
+    }, RELEASE_CHECK_MS);
   } catch (error) {
     document.documentElement.dataset.appReady = "true";
     $("#loading-state").hidden = true;
