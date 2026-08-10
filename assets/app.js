@@ -1,14 +1,14 @@
-import { createDataAdapter } from "./data-adapter.js";
-import { TIERS, calculateDashboard, display } from "./metrics.js";
+import { createDataAdapter } from "./data-adapter.js?v=20260810-4";
+import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260810-4";
 import {
   calculateClientPulse, clearSnapshot, loadPublishedSnapshot, loadSnapshot, parseArReport, parseCalendar,
   parseOpenTickets, parseTicketVolume, saveSnapshot
-} from "./importer.js";
+} from "./importer.js?v=20260810-4";
 import {
   append, buildTableHead, el, emptyState, metricCard, populateSelect,
   portfolioRow, renderDistribution, renderMetricGrid, renderSimpleRows,
   statusPill, tierPanel, tierPill
-} from "./ui.js";
+} from "./ui.js?v=20260810-4";
 
 const PAGE_SIZE = 25;
 let currentPage = 1;
@@ -25,7 +25,7 @@ const formatDate = value => {
 
 function renderHeader() {
   $("#reporting-period").textContent = dashboardData.metrics.reportingPeriod;
-  $("#last-refresh").textContent = formatDate(dashboardData.metrics.lastDataRefresh);
+  $("#last-refresh").textContent = formatDate(importedSnapshot?.generatedAt || dashboardData.metrics.lastDataRefresh);
   $("#header-client-count").textContent = `${calculations.clients.length} active clients`;
   $("#header-tier-coverage").textContent = `${calculations.assignedCount} assigned / ${calculations.byTier.Unassigned.length} unassigned`;
 }
