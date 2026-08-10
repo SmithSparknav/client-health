@@ -1,14 +1,14 @@
-import { createDataAdapter } from "./data-adapter.js?v=20260810-6";
-import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260810-6";
+import { createDataAdapter } from "./data-adapter.js?v=20260810-7";
+import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260810-7";
 import {
   calculateClientPulse, clearSnapshot, loadPublishedSnapshot, loadSnapshot, parseArReport, parseCalendar,
   parseOpenTickets, parseTicketVolume, saveSnapshot
-} from "./importer.js?v=20260810-6";
+} from "./importer.js?v=20260810-7";
 import {
   append, buildTableHead, el, emptyState, metricCard, populateSelect,
   portfolioRow, renderDistribution, renderMetricGrid, renderSimpleRows,
   statusPill, tierPanel, tierPill
-} from "./ui.js?v=20260810-6";
+} from "./ui.js?v=20260810-7";
 
 const PAGE_SIZE = 25;
 const RELEASE_CHECK_MS = 60_000;
@@ -18,6 +18,7 @@ let calculations;
 let importedSnapshot;
 
 const $ = selector => document.querySelector(selector);
+const formatCurrency = value => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(value);
 async function redirectToCurrentRelease() {
   try {
     const response = await fetch(`./data/release.json?refresh=${Date.now()}`, { cache: "no-store" });
@@ -34,7 +35,7 @@ async function redirectToCurrentRelease() {
 }
 const formatDate = value => {
   if (!value) return "No Data";
-  const parsed = new Date(value);
+  const parsed = new Date(/^\d{4}-\d{2}-\d{2}$/.test(value) ? `${value}T12:00:00` : value);
   return Number.isNaN(parsed.valueOf()) ? value : new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric" }).format(parsed);
 };
 
@@ -59,19 +60,60 @@ function healthSummary() {
   return { rows, counts, bookScore, provisional };
 }
 
+function operationalSummary() {
+  if (!importedSnapshot?.clients) return null;
+  const clients = Object.values(importedSnapshot.clients);
+  const unmatched = new Set(Object.values(importedSnapshot.exceptions || {}).flat());
+  return {
+    outstandingAr: clients.reduce((sum, client) => sum + Number(client.ar?.totalOutstanding || 0), 0),
+    clientsWithBalance: clients.filter(client => Number(client.ar?.totalOutstanding || 0) > 0).length,
+    pastDueClients: clients.filter(client => client.ar?.bucket && client.ar.bucket !== "Current").length,
+    mappedOpenTickets: clients.reduce((sum, client) => sum + Number(client.tickets?.openCount || 0), 0),
+    mappedTicketVolume: clients.reduce((sum, client) => sum + Number(client.tickets?.volumeCount || 0), 0),
+    agedTicketClients: clients.filter(client => Number(client.tickets?.oldestOpenAgeDays || 0) >= 21).length,
+    unmatchedCount: unmatched.size
+  };
+}
+
 function renderPrimaryMetrics() {
-  const portfolio = calculations.portfolio;
   const health = healthSummary();
-  renderMetricGrid($("#primary-metrics"), [
-    { label: "Active clients", value: calculations.clients.length, context: "Current portfolio", tone: "primary" },
-    { label: "Book health", value: health.bookScore, context: health.bookScore === null ? "Upload weekly sources" : health.provisional ? "Provisional - source review" : "ClientPulse v1" },
-    { label: "Overall contact rate", value: portfolio.contactRate, context: dashboardData.metrics.reportingPeriod, tone: "empty" },
-    { label: "Retention", value: portfolio.retention, context: dashboardData.metrics.reportingPeriod, tone: "empty" },
-    { label: "Churn", value: portfolio.churn, context: dashboardData.metrics.reportingPeriod, tone: "empty" },
-    { label: "NPS", value: portfolio.nps, context: dashboardData.metrics.reportingPeriod, tone: "empty" },
-    { label: "CSAT", value: portfolio.csat, context: dashboardData.metrics.reportingPeriod, tone: "empty" },
-    { label: "Survey response rate", value: portfolio.responseRate, context: `${portfolio.responded} of ${portfolio.count} clients`, tone: "neutral" }
-  ]);
+  const operations = operationalSummary();
+  const metrics = operations ? [
+    { label: "Active clients", value: calculations.clients.length, context: "Authoritative portfolio", tone: "primary" },
+    { label: "Book health", value: health.bookScore, context: health.provisional ? "Provisional · source review" : "ClientPulse v1" },
+    { label: "At Risk", value: health.counts["At Risk"], context: `${health.counts.Watch} additional Watch`, tone: "risk" },
+    { label: "Healthy clients", value: health.counts.Healthy, context: `${Math.round(health.counts.Healthy / calculations.clients.length * 100)}% of portfolio`, tone: "healthy" },
+    { label: "Outstanding AR", value: formatCurrency(operations.outstandingAr), context: `${operations.clientsWithBalance} clients with balances` },
+    { label: "Past-due clients", value: operations.pastDueClients, context: "31+ day AR bucket", tone: "attention" },
+    { label: "Mapped open tickets", value: operations.mappedOpenTickets, context: `${importedSnapshot.sources.openTickets.rowCount} total source rows` },
+    { label: "Aged-ticket clients", value: operations.agedTicketClients, context: "Oldest open ticket is 21+ days", tone: "attention" }
+  ] : [
+    { label: "Active clients", value: calculations.clients.length, context: "Authoritative portfolio", tone: "primary" },
+    { label: "Book health", value: health.bookScore, context: "Upload weekly sources" },
+    { label: "At Risk", value: "No Data", context: "Health source set required", tone: "empty" },
+    { label: "Healthy clients", value: "No Data", context: "Health source set required", tone: "empty" }
+  ];
+  renderMetricGrid($("#primary-metrics"), metrics);
+
+  const status = $("#snapshot-status");
+  status.replaceChildren();
+  if (!operations) {
+    append(status, "strong", "", "Weekly snapshot not loaded");
+    append(status, "span", "", "Use Data Hub to calculate the current operational view.");
+    return;
+  }
+  const source = importedSnapshot.sources;
+  [
+    ["Data mode", "Latest published snapshot"],
+    ["AR as of", formatDate(source.ar.asOf)],
+    ["Tickets as of", formatDate(source.openTickets.asOf)],
+    ["Ticket volume", `${operations.mappedTicketVolume} mapped / ${source.ticketVolume.rowCount} rows`],
+    ["Source review", `${operations.unmatchedCount} unmatched names · Provisional`]
+  ].forEach(([label, value]) => {
+    const item = append(status, "div", "snapshot-status__item");
+    append(item, "span", "", label);
+    append(item, "strong", "", value);
+  });
 }
 
 function renderHealth() {
