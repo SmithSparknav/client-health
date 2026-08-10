@@ -6,7 +6,7 @@
     <meta name="description" content="SparkNav Account Management portfolio analytics for leadership." />
     <meta name="theme-color" content="#10264a" />
     <title>SparkNav | Account Management Metrics</title>
-    <link rel="stylesheet" href="./assets/styles.css?v=20260810-7" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260810-8" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to dashboard</a>
@@ -20,6 +20,7 @@
           <a class="is-active" href="#overview">Home</a>
           <a href="#data-hub">Data Hub</a>
           <a href="#client-health">Client Health</a>
+          <a href="#tiering">Tiering</a>
           <a href="#contact-performance">Contact Performance</a>
           <a href="#survey-performance">Survey Performance</a>
           <a href="#client-portfolio">Client Portfolio</a>
@@ -108,7 +109,7 @@
           </div>
         </section>
 
-        <section class="section page-shell" data-view="client-health" aria-labelledby="tier-title">
+        <section class="section page-shell" id="tiering" data-view="tiering" aria-labelledby="tier-title">
           <div class="section-heading">
             <div><p class="eyebrow">Portfolio segmentation</p><h2 id="tier-title">Tier performance</h2></div>
             <p>Current tiers use the available-data score: AR financial exposure plus ticket volume, ranked across the 175-client portfolio.</p>
@@ -116,6 +117,15 @@
           <div class="tier-method panel" id="tier-method"></div>
           <div class="distribution panel" id="tier-distribution"></div>
           <div class="tier-grid" id="tier-panels"></div>
+          <div class="panel tier-roster">
+            <div class="tier-roster__heading"><strong>Client tier roster</strong><span>Approved assignments appear first, followed by calculated tiers.</span></div>
+            <div class="table-scroll">
+              <table>
+                <thead id="tier-roster-head"></thead>
+                <tbody id="tier-roster-body"></tbody>
+              </table>
+            </div>
+          </div>
         </section>
 
         <section class="section section--tinted" data-view="client-health" aria-labelledby="attention-title">
@@ -247,6 +257,6 @@
       }
     </script>
     <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js" integrity="sha384-EnyY0/GSHQGSxSgMwaIPzSESbqoOLSexfnSMN2AP+39Ckmn92stwABZynq1JyzdT" crossorigin="anonymous"></script>
-    <script type="module" src="./assets/app.js?v=20260810-7"></script>
+    <script type="module" src="./assets/app.js?v=20260810-8"></script>
   </body>
 </html>
