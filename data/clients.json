@@ -1,0 +1,5829 @@
+{
+  "schemaVersion": "1.0",
+  "expectedPopulation": 175,
+  "clients": [
+    {
+      "name": "AB Floor Solutions",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "AccruePartners",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "All Climate Storage",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Allen's Grading",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Andersen Services",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Apex Ready Mix LLC",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Appian Construction",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Aspect Health",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Avenue",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Barefoot & Company",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Barringer & Barringer",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Blue Dot Readi-Mix",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Bobo's Wrecker Service",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "C&C Boiler Sales & Service",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion",
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "C2 Design",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Caliber Construction Services",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Carillon Independent Senior Living",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Carolina Courts",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Carolina Floors",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Carolina Ingredients",
+      "clientId": "CL-001",
+      "clientIdStatus": "Matched",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Done",
+        "userList": "Done",
+        "meetingCadenceSchedule": "Done",
+        "sparkOne": "Yes",
+        "services": [
+          "CodeFusion",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Carolina Precision Grading",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": []
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Carolyn Vanderberg",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Catoe Family Farms",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "CAVOK Family Office",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Charlotte Growth",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Charlotte Paint",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "CodeFusion",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Coleman Burnett",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Colorful Gypsy",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 1
+      }
+    },
+    {
+      "name": "Community Medical",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Concorde Construction",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Cube Noda",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "D&L Ceramic Tile",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Delta V",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Dermatology, Laser & Vein Specialists",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Destum Partners",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Dickerson Architecture",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Digital Mouth Advertising",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Direct Energy Partners",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Dorchester and Manor",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Dr. Nik",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "CoLab",
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "DRAFT Ad Tech",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Dry Dog Barriers",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Dyer, Raines & Associates",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "E2 Mechanical & Industrial Refrigeration",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "East Coast Masonry & Stone",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Easy Way Products Co",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Ed Wallace Construction",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Edgewater Pools",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Egis Capital",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "ELM Carolina",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion",
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Empowered Leadership",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Encore Luxury Coaches",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Enviro-Master Services",
+      "clientId": "CL-002",
+      "clientIdStatus": "Matched",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Done",
+        "userList": "Done",
+        "meetingCadenceSchedule": "Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Esteem Electric",
+      "clientId": "CL-005",
+      "clientIdStatus": "Matched",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Eternity Real Estate Group",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Evans General Contractors",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Fagus GreCon Inc.",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Fig Tree Restaurant",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "FMK Architects",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Done",
+        "userList": "Done",
+        "meetingCadenceSchedule": "Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Front Light Building Co.",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Gala Affairs",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Gary Frey",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Graphics International",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 2
+      }
+    },
+    {
+      "name": "Hancock Landscape Services",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Harry's Grille & Tavern",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Herlocker Mechanical",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Hungry Horse East",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Huntley Brothers",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "ICG Capital Securities",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Insurance Concepts",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Interluxe",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "James Nelson",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Jamie Oliver",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "JCS Carolinas",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion",
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Jencon Builders",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion",
+          "CoLab",
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Jim Riggins",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Kaylee Smith",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Kelly Barker Sutton",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Kent Jones Law",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Kuester Commercial",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Labor One",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "LandDesign",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Landworks Design Group",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Lanthorne Homes",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Linnane Homes",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Litaker Insurance",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Lowry Insurance",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "LTP Properties",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Ludvig Svensson INC",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Luquire",
+      "clientId": "CL-008",
+      "clientIdStatus": "Matched",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "M Watkins Construction",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Martin Eveleigh",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Matt Jelnicky",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Matthews Building Supply",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "McClancy Seasoning",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Mechanical Systems & Services (MSS)",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion",
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Mechanical Technologies & Solutions (MTS)",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "MEP Services",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 3
+      }
+    },
+    {
+      "name": "Messer Financial Group",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Middle C Jazz",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Miller Services",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Monastery Icons",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "MPV Properties",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "NAPA IBS",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion",
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "NARI of Greater Charlotte",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "National Vacuum Systems",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Neals Grading",
+      "clientId": "CL-006",
+      "clientIdStatus": "Matched",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "New Dimensions",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion",
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "New Forum",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "New Old Remodeling",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Noble Insurance Advisors",
+      "clientId": "CL-003",
+      "clientIdStatus": "Matched",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Ormond Group",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Osborne Brothers Electric",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": []
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Outlook Flooring",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Pageland Truck Works",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Paint One",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Parton Law",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CoLab",
+          "SparkNav",
+          "CodeFusion"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "PB Management",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Piedmont Social House",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "PKG Law",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Portus Wealth Advisors",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Powerhouse Mechanical",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Precise Thermal",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Price Brothers Plumbing",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Process Control Technologies",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Profit Advisory Group",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Project Life Movement",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "ProSidian Consulting",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "QMax Industries",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "RAM Pavement",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion",
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Randy Joyner Golf",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Red Moon Marketing",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "CodeFusion",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Revolution Services Group",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 4
+      }
+    },
+    {
+      "name": "Reynolds Trucking",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Ridgecrest Foundation",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Riifo North America",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Saint Margaret's Episcopal Church",
+      "clientId": "CL-004",
+      "clientIdStatus": "Matched",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Sandra Dieterle",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Scarborough & Britt, LLC",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Schaefer Plastics North America",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Sealing Agents",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Service Pros of the Carolinas",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Sheppard Law Firm",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CoLab",
+          "Primso"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Sistare Carpets",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Site Services of the Carolina's",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "SiteWork Estimating Service",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Skyven Technologies",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Smith & Christensen",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Soccer Shots Franchising",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Southeastern Liquid Analyzers (SELA)",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Southend Exteriors",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Southern Piedmont Piping & Fabrication",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Sovren Group",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Square",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": []
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "St Amand & Efird",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "State Building Services",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Stephens Office Systems",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "CodeFusion",
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Strataform, LLC",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Summit Reconstruction & Restoration",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Swindell Law Firm",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "TDR Plumbing",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "CodeFusion",
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "The Batten Group",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Tison Law",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "TLG Law",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Tony Pope",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "TreeTrap",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Tres Casas Lodging",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Tucker Administrators",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "Yes",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 5
+      }
+    },
+    {
+      "name": "Unthinkable",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 6
+      }
+    },
+    {
+      "name": "Venn Law Group",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 6
+      }
+    },
+    {
+      "name": "WB Moore",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso"
+        ]
+      },
+      "source": {
+        "page": 6
+      }
+    },
+    {
+      "name": "WD Smith Grading",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 6
+      }
+    },
+    {
+      "name": "Williams Electrical",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 6
+      }
+    },
+    {
+      "name": "Zanes Law",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 6
+      }
+    },
+    {
+      "name": "Zar Custom Homes",
+      "clientId": null,
+      "clientIdStatus": "Needs Client ID Review",
+      "tier": "Unassigned",
+      "clientStatus": "Active",
+      "retentionStatus": null,
+      "latestNps": null,
+      "npsClassification": null,
+      "latestCsat": null,
+      "contactsExpected": null,
+      "contactsCompleted": null,
+      "additionalMeetings": null,
+      "contactRate": null,
+      "lastContact": null,
+      "nextContactDue": null,
+      "overdue": null,
+      "lastSurvey": null,
+      "followUpNeeded": "Yes - survey",
+      "operations": {
+        "contactedWelcomeEmail": "Not Done",
+        "devicesHardware": "Not Done",
+        "userList": "Not Done",
+        "meetingCadenceSchedule": "Not Done",
+        "sparkOne": "No",
+        "services": [
+          "Primso",
+          "SparkNav"
+        ]
+      },
+      "source": {
+        "page": 6
+      }
+    }
+  ]
+}
