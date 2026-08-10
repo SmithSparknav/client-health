@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-10T16:02:51.332778-04:00",
+  "generatedAt": "2026-08-10T16:05:44.741749-04:00",
   "scoringModel": "ClientPulse v1",
   "tieringModel": {
     "name": "Available Data Tier Score v1",
@@ -96,7 +96,10 @@
         "ticketVolumeRank": 9,
         "tierScore": 9.0,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "Approved Tier Override",
+        "calculatedTier": "Tier 1",
+        "override": true,
+        "tierSource": "Approved manual assignment"
       }
     },
     "All Climate Storage": {
@@ -428,7 +431,10 @@
         "ticketVolumeRank": 10,
         "tierScore": 9.46,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "Approved Tier Override",
+        "calculatedTier": "Tier 1",
+        "override": true,
+        "tierSource": "Approved manual assignment"
       }
     },
     "Bobo's Wrecker Service": {
@@ -694,7 +700,10 @@
         "ticketVolumeRank": 9,
         "tierScore": 4.69,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "Approved Tier Override",
+        "calculatedTier": "Tier 1",
+        "override": true,
+        "tierSource": "Approved manual assignment"
       }
     },
     "Carolina Precision Grading": {
@@ -1787,7 +1796,10 @@
         "ticketVolumeRank": 10,
         "tierScore": 10.0,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "Approved Tier Override",
+        "calculatedTier": "Tier 1",
+        "override": true,
+        "tierSource": "Approved manual assignment"
       }
     },
     "Esteem Electric": {
@@ -3208,7 +3220,10 @@
         "ticketVolumeRank": 10,
         "tierScore": 10.0,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "Approved Tier Override",
+        "calculatedTier": "Tier 1",
+        "override": true,
+        "tierSource": "Approved manual assignment"
       }
     },
     "Mechanical Technologies & Solutions (MTS)": {
@@ -4396,7 +4411,10 @@
         "ticketVolumeRank": 10,
         "tierScore": 10.0,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "Approved Tier Override",
+        "calculatedTier": "Tier 1",
+        "override": true,
+        "tierSource": "Approved manual assignment"
       }
     },
     "Revolution Services Group": {

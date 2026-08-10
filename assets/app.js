@@ -419,10 +419,11 @@ async function initialize() {
     importedSnapshot = loadSnapshot() || await loadPublishedSnapshot();
     if (importedSnapshot?.clients) {
       dashboardData.clients.clients.forEach(client => {
-        const calculatedTier = importedSnapshot.clients[client.name]?.tiering?.tier;
+        const snapshotTiering = importedSnapshot.clients[client.name]?.tiering;
+        const calculatedTier = snapshotTiering?.tier;
         if (calculatedTier) {
           client.tier = calculatedTier;
-          client.tierSource = "Available Data Tier Score v1";
+          client.tierSource = snapshotTiering.tierSource || "Available Data Tier Score v1";
         }
       });
     }
