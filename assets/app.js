@@ -1,7 +1,7 @@
 import { createDataAdapter } from "./data-adapter.js";
 import { TIERS, calculateDashboard, display } from "./metrics.js";
 import {
-  calculateClientPulse, clearSnapshot, loadSnapshot, parseArReport, parseCalendar,
+  calculateClientPulse, clearSnapshot, loadPublishedSnapshot, loadSnapshot, parseArReport, parseCalendar,
   parseOpenTickets, parseTicketVolume, saveSnapshot
 } from "./importer.js";
 import {
@@ -416,7 +416,7 @@ async function initialize() {
   const activateView = setupNavigation();
   try {
     dashboardData = await createDataAdapter().load();
-    importedSnapshot = loadSnapshot();
+    importedSnapshot = loadSnapshot() || await loadPublishedSnapshot();
     if (importedSnapshot?.clients) {
       dashboardData.clients.clients.forEach(client => {
         const calculatedTier = importedSnapshot.clients[client.name]?.tiering?.tier;

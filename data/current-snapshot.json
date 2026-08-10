@@ -1,0 +1,5848 @@
+{
+  "schemaVersion": "2.0",
+  "generatedAt": "2026-08-10T16:02:51.332778-04:00",
+  "scoringModel": "ClientPulse v1",
+  "tieringModel": {
+    "name": "Available Data Tier Score v1",
+    "financialFactor": "Total outstanding AR balance",
+    "financialWeight": 0.5384615384615384,
+    "ticketVolumeWeight": 0.46153846153846156,
+    "populationSplit": "Top, middle, and bottom thirds"
+  },
+  "sources": {
+    "ar": {
+      "fileName": "260804_AR_Aging.xlsx",
+      "asOf": "2026-08-04",
+      "matchedClients": 68
+    },
+    "openTickets": {
+      "fileName": "Open Tickets Summary by Company and Create Date (1).xlsx",
+      "asOf": "2026-08-10",
+      "matchedClients": 49,
+      "rowCount": 1194,
+      "oldestReceived": "2026-07-10",
+      "spanDays": 31,
+      "possibleTruncation": true
+    },
+    "ticketVolume": {
+      "fileName": "Task_or_Ticket_Summary_by_Company (2).xls",
+      "periodStart": "2026-08-10",
+      "periodEnd": "2026-07-01",
+      "matchedClients": 62,
+      "rowCount": 792
+    }
+  },
+  "clients": {
+    "AB Floor Solutions": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "AB Floor Solutions",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "AccruePartners": {
+      "score": 72,
+      "band": "Watch",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 24,
+        "supportDemand": 18,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 7098.13
+      },
+      "tickets": {
+        "openCount": 6,
+        "oldestOpenAgeDays": 16,
+        "volumeCount": 8,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "AccruePartners",
+        "financialRank": 9,
+        "ticketVolumeRank": 9,
+        "tierScore": 9.0,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "All Climate Storage": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "All Climate Storage",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Allen's Grading": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Allen's Grading",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Andersen Services": {
+      "score": 98,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 2,
+        "oldestOpenAgeDays": 4,
+        "volumeCount": 3,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Andersen Services",
+        "financialRank": 1,
+        "ticketVolumeRank": 7,
+        "tierScore": 3.77,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Apex Ready Mix LLC": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 479.46
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Apex Ready Mix LLC",
+        "financialRank": 4,
+        "ticketVolumeRank": 1,
+        "tierScore": 2.62,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Appian Construction": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Appian Construction",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Aspect Health": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Aspect Health",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Avenue": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Avenue",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Barefoot & Company": {
+      "score": 74,
+      "band": "Watch",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 10,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "31-60",
+        "amount": 0.82,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 4973.32
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [
+        "ar_31_60"
+      ],
+      "tiering": {
+        "name": "Barefoot & Company",
+        "financialRank": 8,
+        "ticketVolumeRank": 1,
+        "tierScore": 4.77,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Barringer & Barringer": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Barringer & Barringer",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Blue Dot Readi-Mix": {
+      "score": 92,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 34,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 11337.58
+      },
+      "tickets": {
+        "openCount": 4,
+        "oldestOpenAgeDays": 10,
+        "volumeCount": 16,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Blue Dot Readi-Mix",
+        "financialRank": 9,
+        "ticketVolumeRank": 10,
+        "tierScore": 9.46,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Bobo's Wrecker Service": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Bobo's Wrecker Service",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "C&C Boiler Sales & Service": {
+      "score": 92,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 34,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 3,
+        "oldestOpenAgeDays": 5,
+        "volumeCount": 5,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "C&C Boiler Sales & Service",
+        "financialRank": 1,
+        "ticketVolumeRank": 8,
+        "tierScore": 4.23,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "C2 Design": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 40.92
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "C2 Design",
+        "financialRank": 2,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.54,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Caliber Construction Services": {
+      "score": 74,
+      "band": "Watch",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 10,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "31-60",
+        "amount": 685.91,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 2059.58
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [
+        "ar_31_60"
+      ],
+      "tiering": {
+        "name": "Caliber Construction Services",
+        "financialRank": 7,
+        "ticketVolumeRank": 4,
+        "tierScore": 5.62,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Carillon Independent Senior Living": {
+      "score": 92,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 34,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 5,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Carillon Independent Senior Living",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Carolina Courts": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Carolina Courts",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Carolina Floors": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Carolina Floors",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Carolina Ingredients": {
+      "score": 52,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 12,
+        "supportDemand": 10,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 5,
+        "oldestOpenAgeDays": 30,
+        "volumeCount": 8,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Carolina Ingredients",
+        "financialRank": 1,
+        "ticketVolumeRank": 9,
+        "tierScore": 4.69,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Carolina Precision Grading": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Carolina Precision Grading",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Carolyn Vanderberg": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Carolyn Vanderberg",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Catoe Family Farms": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Catoe Family Farms",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "CAVOK Family Office": {
+      "score": 52,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 12,
+        "supportDemand": 10,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 3,
+        "oldestOpenAgeDays": 27,
+        "volumeCount": 4,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "CAVOK Family Office",
+        "financialRank": 1,
+        "ticketVolumeRank": 8,
+        "tierScore": 4.23,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Charlotte Growth": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Charlotte Growth",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Charlotte Paint": {
+      "score": 72,
+      "band": "Watch",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 24,
+        "supportDemand": 18,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 1951.74
+      },
+      "tickets": {
+        "openCount": 2,
+        "oldestOpenAgeDays": 19,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Charlotte Paint",
+        "financialRank": 7,
+        "ticketVolumeRank": 6,
+        "tierScore": 6.54,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Coleman Burnett": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Coleman Burnett",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Colorful Gypsy": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 168.98
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Colorful Gypsy",
+        "financialRank": 3,
+        "ticketVolumeRank": 1,
+        "tierScore": 2.08,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Community Medical": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 924.42
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Community Medical",
+        "financialRank": 5,
+        "ticketVolumeRank": 1,
+        "tierScore": 3.15,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Concorde Construction": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 1889.93
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Concorde Construction",
+        "financialRank": 6,
+        "ticketVolumeRank": 6,
+        "tierScore": 6.0,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Cube Noda": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Cube Noda",
+        "financialRank": 1,
+        "ticketVolumeRank": 4,
+        "tierScore": 2.38,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "D&L Ceramic Tile": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "D&L Ceramic Tile",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Delta V": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Delta V",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Dermatology, Laser & Vein Specialists": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Dermatology, Laser & Vein Specialists",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Destum Partners": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Destum Partners",
+        "financialRank": 1,
+        "ticketVolumeRank": 6,
+        "tierScore": 3.31,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Dickerson Architecture": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Dickerson Architecture",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Digital Mouth Advertising": {
+      "score": 62,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 4,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "61-90",
+        "amount": 0.01,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0.01
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [
+        "ar_61_90"
+      ],
+      "tiering": {
+        "name": "Digital Mouth Advertising",
+        "financialRank": 2,
+        "ticketVolumeRank": 6,
+        "tierScore": 3.85,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Direct Energy Partners": {
+      "score": 52,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 12,
+        "supportDemand": 10,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 1161.68
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 23,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Direct Energy Partners",
+        "financialRank": 6,
+        "ticketVolumeRank": 4,
+        "tierScore": 5.08,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Dorchester and Manor": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Dorchester and Manor",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Dr. Nik": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Dr. Nik",
+        "financialRank": 1,
+        "ticketVolumeRank": 4,
+        "tierScore": 2.38,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "DRAFT Ad Tech": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 1750.0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "DRAFT Ad Tech",
+        "financialRank": 6,
+        "ticketVolumeRank": 1,
+        "tierScore": 3.69,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Dry Dog Barriers": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 25.0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Dry Dog Barriers",
+        "financialRank": 2,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.54,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Dyer, Raines & Associates": {
+      "score": 98,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 2,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Dyer, Raines & Associates",
+        "financialRank": 1,
+        "ticketVolumeRank": 6,
+        "tierScore": 3.31,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "E2 Mechanical & Industrial Refrigeration": {
+      "score": 72,
+      "band": "Watch",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 24,
+        "supportDemand": 18,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 2807.2
+      },
+      "tickets": {
+        "openCount": 19,
+        "oldestOpenAgeDays": 19,
+        "volumeCount": 3,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "E2 Mechanical & Industrial Refrigeration",
+        "financialRank": 7,
+        "ticketVolumeRank": 7,
+        "tierScore": 7.0,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "East Coast Masonry & Stone": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 745.26
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "East Coast Masonry & Stone",
+        "financialRank": 4,
+        "ticketVolumeRank": 1,
+        "tierScore": 2.62,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Easy Way Products Co": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Easy Way Products Co",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Ed Wallace Construction": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 3385.83
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 8,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Ed Wallace Construction",
+        "financialRank": 8,
+        "ticketVolumeRank": 9,
+        "tierScore": 8.46,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Edgewater Pools": {
+      "score": 52,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 12,
+        "supportDemand": 10,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 23,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Edgewater Pools",
+        "financialRank": 1,
+        "ticketVolumeRank": 6,
+        "tierScore": 3.31,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Egis Capital": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Egis Capital",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "ELM Carolina": {
+      "score": 72,
+      "band": "Watch",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 24,
+        "supportDemand": 18,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 8353.94
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 17,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "ELM Carolina",
+        "financialRank": 9,
+        "ticketVolumeRank": 4,
+        "tierScore": 6.69,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Empowered Leadership": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Empowered Leadership",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Encore Luxury Coaches": {
+      "score": 50,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 0,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "90+",
+        "amount": 15178.58,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 15178.58
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [
+        "ar_90_plus"
+      ],
+      "tiering": {
+        "name": "Encore Luxury Coaches",
+        "financialRank": 10,
+        "ticketVolumeRank": 1,
+        "tierScore": 5.85,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Enviro-Master Services": {
+      "score": 52,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 12,
+        "supportDemand": 10,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 20288.16
+      },
+      "tickets": {
+        "openCount": 87,
+        "oldestOpenAgeDays": 23,
+        "volumeCount": 37,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Enviro-Master Services",
+        "financialRank": 10,
+        "ticketVolumeRank": 10,
+        "tierScore": 10.0,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Esteem Electric": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Esteem Electric",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Eternity Real Estate Group": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Eternity Real Estate Group",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Evans General Contractors": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Evans General Contractors",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Fagus GreCon Inc.": {
+      "score": 72,
+      "band": "Watch",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 24,
+        "supportDemand": 18,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 9448.99
+      },
+      "tickets": {
+        "openCount": 4,
+        "oldestOpenAgeDays": 13,
+        "volumeCount": 3,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Fagus GreCon Inc.",
+        "financialRank": 9,
+        "ticketVolumeRank": 7,
+        "tierScore": 8.08,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Fig Tree Restaurant": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 2.7
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Fig Tree Restaurant",
+        "financialRank": 2,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.54,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "FMK Architects": {
+      "score": 52,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 12,
+        "supportDemand": 10,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 3,
+        "oldestOpenAgeDays": 27,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "FMK Architects",
+        "financialRank": 1,
+        "ticketVolumeRank": 6,
+        "tierScore": 3.31,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Front Light Building Co.": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Front Light Building Co.",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Gala Affairs": {
+      "score": 98,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 830.47
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 3,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Gala Affairs",
+        "financialRank": 5,
+        "ticketVolumeRank": 1,
+        "tierScore": 3.15,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Gary Frey": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Gary Frey",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Graphics International": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Graphics International",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Hancock Landscape Services": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Hancock Landscape Services",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Harry's Grille & Tavern": {
+      "score": 92,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 34,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 951.0
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 5,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Harry's Grille & Tavern",
+        "financialRank": 5,
+        "ticketVolumeRank": 4,
+        "tierScore": 4.54,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Herlocker Mechanical": {
+      "score": 98,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 11565.84
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 2,
+        "volumeCount": 6,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Herlocker Mechanical",
+        "financialRank": 9,
+        "ticketVolumeRank": 8,
+        "tierScore": 8.54,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Hungry Horse East": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Hungry Horse East",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Huntley Brothers": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 3133.94
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 4,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Huntley Brothers",
+        "financialRank": 8,
+        "ticketVolumeRank": 8,
+        "tierScore": 8.0,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "ICG Capital Securities": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 77.08
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "ICG Capital Securities",
+        "financialRank": 2,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.54,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Insurance Concepts": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Insurance Concepts",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Interluxe": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 95.0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Interluxe",
+        "financialRank": 3,
+        "ticketVolumeRank": 1,
+        "tierScore": 2.08,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "James Nelson": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "James Nelson",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Jamie Oliver": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Jamie Oliver",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "JCS Carolinas": {
+      "score": 52,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 12,
+        "supportDemand": 10,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 960.77
+      },
+      "tickets": {
+        "openCount": 4,
+        "oldestOpenAgeDays": 24,
+        "volumeCount": 3,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "JCS Carolinas",
+        "financialRank": 5,
+        "ticketVolumeRank": 7,
+        "tierScore": 5.92,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Jencon Builders": {
+      "score": 50,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 0,
+        "serviceResponsiveness": 40,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "90+",
+        "amount": 28528.81,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 49966.240000000005
+      },
+      "tickets": {
+        "openCount": 3,
+        "oldestOpenAgeDays": 4,
+        "volumeCount": 17,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [
+        "ar_90_plus"
+      ],
+      "tiering": {
+        "name": "Jencon Builders",
+        "financialRank": 10,
+        "ticketVolumeRank": 10,
+        "tierScore": 10.0,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Jim Riggins": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Jim Riggins",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Kaylee Smith": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Kaylee Smith",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Kelly Barker Sutton": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Kelly Barker Sutton",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Kent Jones Law": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Kent Jones Law",
+        "financialRank": 1,
+        "ticketVolumeRank": 6,
+        "tierScore": 3.31,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Kuester Commercial": {
+      "score": 62,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 10,
+        "serviceResponsiveness": 24,
+        "supportDemand": 18,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "31-60",
+        "amount": 6015.0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 12594.95
+      },
+      "tickets": {
+        "openCount": 3,
+        "oldestOpenAgeDays": 12,
+        "volumeCount": 5,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Kuester Commercial",
+        "financialRank": 10,
+        "ticketVolumeRank": 8,
+        "tierScore": 9.08,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Labor One": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 7079.719999999999
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Labor One",
+        "financialRank": 9,
+        "ticketVolumeRank": 1,
+        "tierScore": 5.31,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "LandDesign": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "LandDesign",
+        "financialRank": 1,
+        "ticketVolumeRank": 6,
+        "tierScore": 3.31,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Landworks Design Group": {
+      "score": 52,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 12,
+        "supportDemand": 10,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 2,
+        "oldestOpenAgeDays": 24,
+        "volumeCount": 3,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Landworks Design Group",
+        "financialRank": 1,
+        "ticketVolumeRank": 7,
+        "tierScore": 3.77,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Lanthorne Homes": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 5055.0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Lanthorne Homes",
+        "financialRank": 8,
+        "ticketVolumeRank": 1,
+        "tierScore": 4.77,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Linnane Homes": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 55.0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Linnane Homes",
+        "financialRank": 2,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.54,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Litaker Insurance": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 6,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Litaker Insurance",
+        "financialRank": 1,
+        "ticketVolumeRank": 8,
+        "tierScore": 4.23,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Lowry Insurance": {
+      "score": 72,
+      "band": "Watch",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 24,
+        "supportDemand": 18,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 7,
+        "oldestOpenAgeDays": 13,
+        "volumeCount": 12,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Lowry Insurance",
+        "financialRank": 1,
+        "ticketVolumeRank": 9,
+        "tierScore": 4.69,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "LTP Properties": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "LTP Properties",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Ludvig Svensson INC": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Ludvig Svensson INC",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Luquire": {
+      "score": 92,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 34,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 6624.58
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 9,
+        "volumeCount": 6,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Luquire",
+        "financialRank": 8,
+        "ticketVolumeRank": 8,
+        "tierScore": 8.0,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "M Watkins Construction": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "M Watkins Construction",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Martin Eveleigh": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Martin Eveleigh",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Matt Jelnicky": {
+      "score": 92,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 34,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 6,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Matt Jelnicky",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Matthews Building Supply": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Matthews Building Supply",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "McClancy Seasoning": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "McClancy Seasoning",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Mechanical Systems & Services (MSS)": {
+      "score": 52,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 12,
+        "supportDemand": 10,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 38669.59
+      },
+      "tickets": {
+        "openCount": 710,
+        "oldestOpenAgeDays": 30,
+        "volumeCount": 72,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Mechanical Systems & Services (MSS)",
+        "financialRank": 10,
+        "ticketVolumeRank": 10,
+        "tierScore": 10.0,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Mechanical Technologies & Solutions (MTS)": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 2633.0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Mechanical Technologies & Solutions (MTS)",
+        "financialRank": 7,
+        "ticketVolumeRank": 1,
+        "tierScore": 4.23,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "MEP Services": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "MEP Services",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Messer Financial Group": {
+      "score": 92,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 34,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 3,
+        "oldestOpenAgeDays": 10,
+        "volumeCount": 8,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Messer Financial Group",
+        "financialRank": 1,
+        "ticketVolumeRank": 9,
+        "tierScore": 4.69,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Middle C Jazz": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Middle C Jazz",
+        "financialRank": 1,
+        "ticketVolumeRank": 4,
+        "tierScore": 2.38,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Miller Services": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 866.0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Miller Services",
+        "financialRank": 5,
+        "ticketVolumeRank": 1,
+        "tierScore": 3.15,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Monastery Icons": {
+      "score": 98,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 2,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Monastery Icons",
+        "financialRank": 1,
+        "ticketVolumeRank": 4,
+        "tierScore": 2.38,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "MPV Properties": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "MPV Properties",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "NAPA IBS": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "NAPA IBS",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "NARI of Greater Charlotte": {
+      "score": 98,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 2,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "NARI of Greater Charlotte",
+        "financialRank": 1,
+        "ticketVolumeRank": 4,
+        "tierScore": 2.38,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "National Vacuum Systems": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "National Vacuum Systems",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Neals Grading": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Neals Grading",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "New Dimensions": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "New Dimensions",
+        "financialRank": 1,
+        "ticketVolumeRank": 4,
+        "tierScore": 2.38,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "New Forum": {
+      "score": 52,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 12,
+        "supportDemand": 10,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 3475.46
+      },
+      "tickets": {
+        "openCount": 4,
+        "oldestOpenAgeDays": 25,
+        "volumeCount": 182,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "New Forum",
+        "financialRank": 8,
+        "ticketVolumeRank": 10,
+        "tierScore": 8.92,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "New Old Remodeling": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "New Old Remodeling",
+        "financialRank": 1,
+        "ticketVolumeRank": 4,
+        "tierScore": 2.38,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Noble Insurance Advisors": {
+      "score": 98,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 2,
+        "oldestOpenAgeDays": 4,
+        "volumeCount": 3,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Noble Insurance Advisors",
+        "financialRank": 1,
+        "ticketVolumeRank": 7,
+        "tierScore": 3.77,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Ormond Group": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 596.25
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 4,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Ormond Group",
+        "financialRank": 4,
+        "ticketVolumeRank": 8,
+        "tierScore": 5.85,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Osborne Brothers Electric": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Osborne Brothers Electric",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Outlook Flooring": {
+      "score": 92,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 34,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 4,
+        "oldestOpenAgeDays": 6,
+        "volumeCount": 38,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Outlook Flooring",
+        "financialRank": 1,
+        "ticketVolumeRank": 10,
+        "tierScore": 5.15,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Pageland Truck Works": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Pageland Truck Works",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Paint One": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Paint One",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Parton Law": {
+      "score": 52,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 12,
+        "supportDemand": 10,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 4,
+        "oldestOpenAgeDays": 24,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Parton Law",
+        "financialRank": 1,
+        "ticketVolumeRank": 6,
+        "tierScore": 3.31,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "PB Management": {
+      "score": 98,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 775.01
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 4,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "PB Management",
+        "financialRank": 4,
+        "ticketVolumeRank": 4,
+        "tierScore": 4.0,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Piedmont Social House": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Piedmont Social House",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "PKG Law": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "PKG Law",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Portus Wealth Advisors": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Portus Wealth Advisors",
+        "financialRank": 1,
+        "ticketVolumeRank": 4,
+        "tierScore": 2.38,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Powerhouse Mechanical": {
+      "score": 72,
+      "band": "Watch",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 24,
+        "supportDemand": 18,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 1383.13
+      },
+      "tickets": {
+        "openCount": 2,
+        "oldestOpenAgeDays": 19,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Powerhouse Mechanical",
+        "financialRank": 6,
+        "ticketVolumeRank": 1,
+        "tierScore": 3.69,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Precise Thermal": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Precise Thermal",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Price Brothers Plumbing": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 3000.0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Price Brothers Plumbing",
+        "financialRank": 7,
+        "ticketVolumeRank": 1,
+        "tierScore": 4.23,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Process Control Technologies": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Process Control Technologies",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Profit Advisory Group": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Profit Advisory Group",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Project Life Movement": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 211.09
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Project Life Movement",
+        "financialRank": 3,
+        "ticketVolumeRank": 1,
+        "tierScore": 2.08,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "ProSidian Consulting": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "ProSidian Consulting",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "QMax Industries": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 3,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "QMax Industries",
+        "financialRank": 1,
+        "ticketVolumeRank": 7,
+        "tierScore": 3.77,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "RAM Pavement": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 977.0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "RAM Pavement",
+        "financialRank": 5,
+        "ticketVolumeRank": 4,
+        "tierScore": 4.54,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Randy Joyner Golf": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Randy Joyner Golf",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Red Moon Marketing": {
+      "score": 52,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 12,
+        "supportDemand": 10,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 19723.29
+      },
+      "tickets": {
+        "openCount": 13,
+        "oldestOpenAgeDays": 30,
+        "volumeCount": 15,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Red Moon Marketing",
+        "financialRank": 10,
+        "ticketVolumeRank": 10,
+        "tierScore": 10.0,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Revolution Services Group": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Revolution Services Group",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Reynolds Trucking": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Reynolds Trucking",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Ridgecrest Foundation": {
+      "score": 52,
+      "band": "At Risk",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 12,
+        "supportDemand": 10,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 6,
+        "oldestOpenAgeDays": 28,
+        "volumeCount": 7,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Ridgecrest Foundation",
+        "financialRank": 1,
+        "ticketVolumeRank": 9,
+        "tierScore": 4.69,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Riifo North America": {
+      "score": 72,
+      "band": "Watch",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 24,
+        "supportDemand": 18,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 12,
+        "volumeCount": 4,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Riifo North America",
+        "financialRank": 1,
+        "ticketVolumeRank": 8,
+        "tierScore": 4.23,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Saint Margaret's Episcopal Church": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 2258.74
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Saint Margaret's Episcopal Church",
+        "financialRank": 7,
+        "ticketVolumeRank": 1,
+        "tierScore": 4.23,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Sandra Dieterle": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Sandra Dieterle",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Scarborough & Britt, LLC": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Scarborough & Britt, LLC",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Schaefer Plastics North America": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 13500.0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Schaefer Plastics North America",
+        "financialRank": 10,
+        "ticketVolumeRank": 1,
+        "tierScore": 5.85,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Sealing Agents": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 1130.0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Sealing Agents",
+        "financialRank": 5,
+        "ticketVolumeRank": 1,
+        "tierScore": 3.15,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Service Pros of the Carolinas": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 1245.63
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Service Pros of the Carolinas",
+        "financialRank": 6,
+        "ticketVolumeRank": 1,
+        "tierScore": 3.69,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Sheppard Law Firm": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Sheppard Law Firm",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Sistare Carpets": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Sistare Carpets",
+        "financialRank": 1,
+        "ticketVolumeRank": 6,
+        "tierScore": 3.31,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Site Services of the Carolina's": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Site Services of the Carolina's",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "SiteWork Estimating Service": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 120.5
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "SiteWork Estimating Service",
+        "financialRank": 3,
+        "ticketVolumeRank": 1,
+        "tierScore": 2.08,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Skyven Technologies": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Skyven Technologies",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Smith & Christensen": {
+      "score": 98,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 3,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Smith & Christensen",
+        "financialRank": 1,
+        "ticketVolumeRank": 4,
+        "tierScore": 2.38,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Soccer Shots Franchising": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Soccer Shots Franchising",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Southeastern Liquid Analyzers (SELA)": {
+      "score": 72,
+      "band": "Watch",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 24,
+        "supportDemand": 18,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 697.45
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 13,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Southeastern Liquid Analyzers (SELA)",
+        "financialRank": 4,
+        "ticketVolumeRank": 1,
+        "tierScore": 2.62,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Southend Exteriors": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 11984.0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Southend Exteriors",
+        "financialRank": 9,
+        "ticketVolumeRank": 1,
+        "tierScore": 5.31,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Southern Piedmont Piping & Fabrication": {
+      "score": 92,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 34,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 6,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Southern Piedmont Piping & Fabrication",
+        "financialRank": 1,
+        "ticketVolumeRank": 6,
+        "tierScore": 3.31,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Sovren Group": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 212.57999999999998
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Sovren Group",
+        "financialRank": 3,
+        "ticketVolumeRank": 1,
+        "tierScore": 2.08,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Square": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Square",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "St Amand & Efird": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "St Amand & Efird",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "State Building Services": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "State Building Services",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Stephens Office Systems": {
+      "score": 92,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 34,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 2,
+        "oldestOpenAgeDays": 5,
+        "volumeCount": 10,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Stephens Office Systems",
+        "financialRank": 1,
+        "ticketVolumeRank": 9,
+        "tierScore": 4.69,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Strataform, LLC": {
+      "score": 92,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 34,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 3,
+        "oldestOpenAgeDays": 9,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Strataform, LLC",
+        "financialRank": 1,
+        "ticketVolumeRank": 6,
+        "tierScore": 3.31,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Summit Reconstruction & Restoration": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Summit Reconstruction & Restoration",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Swindell Law Firm": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Swindell Law Firm",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "TDR Plumbing": {
+      "score": 98,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 1809.76
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 4,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "TDR Plumbing",
+        "financialRank": 6,
+        "ticketVolumeRank": 6,
+        "tierScore": 6.0,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "The Batten Group": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "The Batten Group",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Tison Law": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 214.28
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Tison Law",
+        "financialRank": 3,
+        "ticketVolumeRank": 1,
+        "tierScore": 2.08,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "TLG Law": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 2,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "TLG Law",
+        "financialRank": 1,
+        "ticketVolumeRank": 6,
+        "tierScore": 3.31,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Tony Pope": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Tony Pope",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "TreeTrap": {
+      "score": 92,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 34,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 555.41
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 9,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "TreeTrap",
+        "financialRank": 4,
+        "ticketVolumeRank": 1,
+        "tierScore": 2.62,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Tres Casas Lodging": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Tres Casas Lodging",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Tucker Administrators": {
+      "score": 92,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 34,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 2,
+        "oldestOpenAgeDays": 5,
+        "volumeCount": 1,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Tucker Administrators",
+        "financialRank": 1,
+        "ticketVolumeRank": 4,
+        "tierScore": 2.38,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Unthinkable": {
+      "score": 92,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 34,
+        "supportDemand": 28,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 1,
+        "oldestOpenAgeDays": 6,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Unthinkable",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Venn Law Group": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Venn Law Group",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "WB Moore": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 2855.0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "WB Moore",
+        "financialRank": 7,
+        "ticketVolumeRank": 1,
+        "tierScore": 4.23,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "WD Smith Grading": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 367.19
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "WD Smith Grading",
+        "financialRank": 3,
+        "ticketVolumeRank": 1,
+        "tierScore": 2.08,
+        "tier": "Tier 2",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Williams Electrical": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Williams Electrical",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Zanes Law": {
+      "score": 72,
+      "band": "Watch",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 24,
+        "supportDemand": 18,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 5,
+        "oldestOpenAgeDays": 17,
+        "volumeCount": 7,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Zanes Law",
+        "financialRank": 1,
+        "ticketVolumeRank": 9,
+        "tierScore": 4.69,
+        "tier": "Tier 1",
+        "method": "Available Data Tier Score v1"
+      }
+    },
+    "Zar Custom Homes": {
+      "score": 100,
+      "band": "Healthy",
+      "scoreStatus": "Provisional",
+      "dataState": "Partial Data",
+      "pillars": {
+        "paymentHealth": 20,
+        "serviceResponsiveness": 40,
+        "supportDemand": 30,
+        "engagement": 10
+      },
+      "ar": {
+        "bucket": "Current",
+        "amount": 0,
+        "asOf": "2026-08-04",
+        "totalOutstanding": 0
+      },
+      "tickets": {
+        "openCount": 0,
+        "oldestOpenAgeDays": null,
+        "volumeCount": 0,
+        "asOf": "2026-08-10"
+      },
+      "capsApplied": [],
+      "tiering": {
+        "name": "Zar Custom Homes",
+        "financialRank": 1,
+        "ticketVolumeRank": 1,
+        "tierScore": 1.0,
+        "tier": "Tier 3",
+        "method": "Available Data Tier Score v1"
+      }
+    }
+  },
+  "exceptions": {
+    "unmatchedAr": [
+      "Carroll Jenkins",
+      "NAPA Fleet G&C",
+      "Nicholas Riggins",
+      "Promera LLC"
+    ],
+    "unmatchedOpenTickets": [
+      "CTJ Companies",
+      "Carolina Construction Service",
+      "SeedSpark Client",
+      "SparkNav"
+    ],
+    "unmatchedTicketVolume": [
+      "CTJ Companies",
+      "Carolina Construction Service",
+      "Comporium Media Services",
+      "Promera LLC",
+      "SeedSpark Client",
+      "SparkNav",
+      "Williams Subaru"
+    ]
+  },
+  "warnings": [
+    "Open Tickets report may be truncated: high row count with only a short received-date span. Scores are provisional."
+  ]
+}
