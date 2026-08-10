@@ -317,4 +317,13 @@ export function saveSnapshot(snapshot) { localStorage.setItem(SNAPSHOT_KEY, JSON
 export function loadSnapshot() {
   try { return JSON.parse(localStorage.getItem(SNAPSHOT_KEY)); } catch { return null; }
 }
+export async function loadPublishedSnapshot() {
+  try {
+    const response = await fetch("./data/current-snapshot.json", { cache: "no-store" });
+    if (!response.ok) return null;
+    return await response.json();
+  } catch {
+    return null;
+  }
+}
 export function clearSnapshot() { localStorage.removeItem(SNAPSHOT_KEY); }
