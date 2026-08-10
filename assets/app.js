@@ -1,14 +1,14 @@
-import { createDataAdapter } from "./data-adapter.js?v=20260810-7";
-import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260810-7";
+import { createDataAdapter } from "./data-adapter.js?v=20260810-8";
+import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260810-8";
 import {
   calculateClientPulse, clearSnapshot, loadPublishedSnapshot, loadSnapshot, parseArReport, parseCalendar,
   parseOpenTickets, parseTicketVolume, saveSnapshot
-} from "./importer.js?v=20260810-7";
+} from "./importer.js?v=20260810-8";
 import {
   append, buildTableHead, el, emptyState, metricCard, populateSelect,
   portfolioRow, renderDistribution, renderMetricGrid, renderSimpleRows,
   statusPill, tierPanel, tierPill
-} from "./ui.js?v=20260810-7";
+} from "./ui.js?v=20260810-8";
 
 const PAGE_SIZE = 25;
 const RELEASE_CHECK_MS = 60_000;
@@ -207,13 +207,34 @@ function renderTierPerformance() {
   method.replaceChildren();
   if (importedSnapshot?.tieringModel) {
     append(method, "strong", "", "Available Data Tier Score v1");
-    append(method, "p", "", "Financial exposure is ranked from total outstanding AR and weighted 54%. Ticket volume is ranked from the uploaded reporting period and weighted 46%. Clients are then split into top, middle, and bottom thirds. This model uses the data currently available and can expand when better revenue, size, or strategic-value data becomes available.");
+    const approvedCount = Object.values(importedSnapshot.clients || {}).filter(client => client.tiering?.override).length;
+    append(method, "p", "", `Financial exposure is ranked from total outstanding AR and weighted 54%. Ticket volume is weighted 46%. The portfolio is divided into top, middle, and bottom thirds, then ${approvedCount} approved manual assignments are preserved.`);
   } else {
     append(method, "strong", "", "Tier calculation pending");
     append(method, "p", "", "Upload the three weekly source reports in the Data Hub to calculate the available-data tier score.");
   }
   renderDistribution($("#tier-distribution"), counts, calculations.clients.length);
   $("#tier-panels").replaceChildren(...TIERS.map(tier => tierPanel(tier, calculations.tierMetrics[tier])));
+
+  const tierOrder = Object.fromEntries(TIERS.map((tier, index) => [tier, index]));
+  const roster = calculations.clients.map(client => ({
+    ...client,
+    tiering: importedSnapshot?.clients?.[client.name]?.tiering || null
+  })).sort((a, b) =>
+    Number(Boolean(b.tiering?.override)) - Number(Boolean(a.tiering?.override)) ||
+    tierOrder[a.tier] - tierOrder[b.tier] ||
+    Number(b.tiering?.tierScore || 0) - Number(a.tiering?.tierScore || 0) ||
+    a.name.localeCompare(b.name)
+  );
+  buildTableHead($("#tier-roster-head"), ["Client", "Tier", "Assignment source", "Tier score", "Financial rank", "Ticket rank"]);
+  renderSimpleRows($("#tier-roster-body"), roster, [
+    { key: "name", className: "client-name" },
+    { render: client => tierPill(client.tier) },
+    { render: client => statusPill(client.tiering?.override ? "Approved manual assignment" : "Available Data Tier Score v1", client.tiering?.override ? "active" : "no-data") },
+    { render: client => client.tiering?.tierScore ?? "No Data" },
+    { render: client => client.tiering?.financialRank ?? "No Data" },
+    { render: client => client.tiering?.ticketVolumeRank ?? "No Data" }
+  ]);
 }
 
 function renderAttention() {
@@ -435,7 +456,7 @@ function setupDataHub() {
 function setupNavigation() {
   const button = $("#menu-button");
   const nav = $(".primary-nav");
-  const validViews = new Set(["overview", "data-hub", "client-health", "contact-performance", "survey-performance", "client-portfolio", "calendar"]);
+  const validViews = new Set(["overview", "data-hub", "client-health", "tiering", "contact-performance", "survey-performance", "client-portfolio", "calendar"]);
 
   const activateView = () => {
     const requested = window.location.hash.slice(1);
