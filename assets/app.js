@@ -1,14 +1,14 @@
-import { createDataAdapter } from "./data-adapter.js?v=20260810-4";
-import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260810-4";
+import { createDataAdapter } from "./data-adapter.js?v=20260810-5";
+import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260810-5";
 import {
   calculateClientPulse, clearSnapshot, loadPublishedSnapshot, loadSnapshot, parseArReport, parseCalendar,
   parseOpenTickets, parseTicketVolume, saveSnapshot
-} from "./importer.js?v=20260810-4";
+} from "./importer.js?v=20260810-5";
 import {
   append, buildTableHead, el, emptyState, metricCard, populateSelect,
   portfolioRow, renderDistribution, renderMetricGrid, renderSimpleRows,
   statusPill, tierPanel, tierPill
-} from "./ui.js?v=20260810-4";
+} from "./ui.js?v=20260810-5";
 
 const PAGE_SIZE = 25;
 let currentPage = 1;
@@ -449,8 +449,10 @@ async function initialize() {
     });
     $("#loading-state").hidden = true;
     $("#dashboard").hidden = false;
+    document.documentElement.dataset.appReady = "true";
     activateView();
   } catch (error) {
+    document.documentElement.dataset.appReady = "true";
     $("#loading-state").hidden = true;
     const alert = $("#error-state");
     alert.textContent = window.location.protocol === "file:"

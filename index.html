@@ -6,7 +6,7 @@
     <meta name="description" content="SparkNav Account Management portfolio analytics for leadership." />
     <meta name="theme-color" content="#10264a" />
     <title>SparkNav | Account Management Metrics</title>
-    <link rel="stylesheet" href="./assets/styles.css?v=20260810-4" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260810-5" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to dashboard</a>
@@ -223,9 +223,29 @@
           alert.innerHTML = '<strong>This dashboard cannot run from a File address.</strong><br>Double-click <code>start-dashboard.command</code> in the Web Dashboard folder, then use <a href="http://localhost:8000/">http://localhost:8000/</a>.';
           alert.hidden = false;
         });
+      } else {
+        window.addEventListener("DOMContentLoaded", () => {
+          window.setTimeout(() => {
+            if (document.documentElement.dataset.appReady === "true") return;
+            const state = document.querySelector("#loading-state");
+            if (!state || state.hidden || state.querySelector(".loading-retry")) return;
+            const message = state.querySelector("span:last-child");
+            if (message) message.textContent = "The dashboard load was interrupted.";
+            const retry = document.createElement("button");
+            retry.className = "button button--primary loading-retry";
+            retry.type = "button";
+            retry.textContent = "Reload dashboard";
+            retry.addEventListener("click", () => {
+              const url = new URL(window.location.href);
+              url.searchParams.set("refresh", Date.now());
+              window.location.replace(url);
+            });
+            state.appendChild(retry);
+          }, 8000);
+        });
       }
     </script>
     <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js" integrity="sha384-EnyY0/GSHQGSxSgMwaIPzSESbqoOLSexfnSMN2AP+39Ckmn92stwABZynq1JyzdT" crossorigin="anonymous"></script>
-    <script type="module" src="./assets/app.js?v=20260810-4"></script>
+    <script type="module" src="./assets/app.js?v=20260810-5"></script>
   </body>
 </html>
