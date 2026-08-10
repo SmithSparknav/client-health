@@ -339,7 +339,7 @@ export function loadSnapshot() {
 }
 export async function loadPublishedSnapshot() {
   try {
-    const response = await fetch("./data/current-snapshot.json", { cache: "no-store" });
+    const response = await fetch(`./data/current-snapshot.json?refresh=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) return null;
     return await response.json();
   } catch {
