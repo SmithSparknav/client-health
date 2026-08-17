@@ -1,14 +1,14 @@
-import { createDataAdapter } from "./data-adapter.js?v=20260817-1";
-import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260817-1";
+import { createDataAdapter } from "./data-adapter.js?v=20260817-2";
+import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260817-2";
 import {
   calculateClientPulse, clearSnapshot, loadPublishedSnapshot, loadSnapshot, parseArReport, parseCalendar,
   parseOpenTickets, parseTicketVolume, saveSnapshot
-} from "./importer.js?v=20260817-1";
+} from "./importer.js?v=20260817-2";
 import {
   append, buildTableHead, el, emptyState, metricCard, populateSelect,
   portfolioRow, renderDistribution, renderMetricGrid, renderSimpleRows,
   statusPill, tierPanel, tierPill
-} from "./ui.js?v=20260817-1";
+} from "./ui.js?v=20260817-2";
 
 const PAGE_SIZE = 25;
 const RELEASE_CHECK_MS = 60_000;
@@ -62,7 +62,9 @@ function healthSummary() {
 function operationalSummary() {
   if (!importedSnapshot?.clients) return null;
   const activeNames = new Set(calculations.activeClients.map(client => client.name));
-  const clients = Object.values(importedSnapshot.clients).filter(client => activeNames.has(client.name));
+  const clients = Object.entries(importedSnapshot.clients)
+    .filter(([name]) => activeNames.has(name))
+    .map(([, client]) => client);
   const unmatched = new Set(Object.values(importedSnapshot.exceptions || {}).flat());
   return {
     mappedOpenTickets: clients.reduce((sum, client) => sum + Number(client.tickets?.openCount || 0), 0),
