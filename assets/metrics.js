@@ -8,6 +8,7 @@ const numeric = value => {
   return Number.isFinite(parsed) ? parsed : null;
 };
 export const formatPercent = value => `${Math.round(value)}%`;
+export const formatPercentOneDecimal = value => `${value.toFixed(1)}%`;
 export const display = (value, fallback = "No Data") => present(value) ? String(value) : fallback;
 
 export function validateClients(clients, expectedPopulation = 175) {
@@ -48,9 +49,8 @@ export function aggregateClients(clients, tier = null) {
   const csatValues = clients.map(client => numeric(client.latestCsat)).filter(value => value !== null);
   const csat = csatValues.length ? csatValues.reduce((sum, value) => sum + value, 0) / csatValues.length : null;
   const responded = clients.filter(client => present(client.lastSurvey)).length;
-  const lifecycle = clients.filter(client => ["Retained", "Churned"].includes(client.retentionStatus));
-  const retained = lifecycle.filter(client => client.retentionStatus === "Retained").length;
-  const churned = lifecycle.filter(client => client.retentionStatus === "Churned").length;
+  const churned = clients.filter(client => client.retentionStatus === "Churned").length;
+  const retained = clients.length - churned;
   const overdue = clients.filter(client => client.overdue === true).length;
 
   return {
@@ -59,8 +59,8 @@ export function aggregateClients(clients, tier = null) {
     completed,
     additionalMeetings,
     contactRate,
-    retention: lifecycle.length ? formatPercent(retained / lifecycle.length * 100) : "No Data",
-    churn: lifecycle.length ? formatPercent(churned / lifecycle.length * 100) : "No Data",
+    retention: clients.length ? formatPercentOneDecimal(retained / clients.length * 100) : "No Data",
+    churn: clients.length ? formatPercentOneDecimal(churned / clients.length * 100) : "No Data",
     nps: nps === null ? "No Response" : String(nps),
     csat: csat === null ? "No Response" : formatPercent(csat),
     responded,
@@ -71,11 +71,15 @@ export function aggregateClients(clients, tier = null) {
 
 export function calculateDashboard(data) {
   const clients = data.clients.clients;
-  const byTier = Object.fromEntries(TIERS.map(tier => [tier, clients.filter(client => client.tier === tier)]));
+  const activeClients = clients.filter(client => client.clientStatus === "Active" && client.retentionStatus !== "Churned");
+  const churnedClients = clients.filter(client => client.retentionStatus === "Churned");
+  const byTier = Object.fromEntries(TIERS.map(tier => [tier, activeClients.filter(client => client.tier === tier)]));
   const tierMetrics = Object.fromEntries(TIERS.map(tier => [tier, aggregateClients(byTier[tier], tier)]));
   const validation = validateClients(clients, data.clients.expectedPopulation);
   return {
     clients,
+    activeClients,
+    churnedClients,
     byTier,
     tierMetrics,
     validation,

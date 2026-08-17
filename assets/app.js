@@ -1,14 +1,14 @@
-import { createDataAdapter } from "./data-adapter.js?v=20260810-8";
-import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260810-8";
+import { createDataAdapter } from "./data-adapter.js?v=20260817-1";
+import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260817-1";
 import {
   calculateClientPulse, clearSnapshot, loadPublishedSnapshot, loadSnapshot, parseArReport, parseCalendar,
   parseOpenTickets, parseTicketVolume, saveSnapshot
-} from "./importer.js?v=20260810-8";
+} from "./importer.js?v=20260817-1";
 import {
   append, buildTableHead, el, emptyState, metricCard, populateSelect,
   portfolioRow, renderDistribution, renderMetricGrid, renderSimpleRows,
   statusPill, tierPanel, tierPill
-} from "./ui.js?v=20260810-8";
+} from "./ui.js?v=20260817-1";
 
 const PAGE_SIZE = 25;
 const RELEASE_CHECK_MS = 60_000;
@@ -18,7 +18,6 @@ let calculations;
 let importedSnapshot;
 
 const $ = selector => document.querySelector(selector);
-const formatCurrency = value => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(value);
 async function redirectToCurrentRelease() {
   try {
     const response = await fetch(`./data/release.json?refresh=${Date.now()}`, { cache: "no-store" });
@@ -41,18 +40,18 @@ const formatDate = value => {
 
 function renderHeader() {
   $("#reporting-period").textContent = dashboardData.metrics.reportingPeriod;
-  $("#last-refresh").textContent = formatDate(importedSnapshot?.generatedAt || dashboardData.metrics.lastDataRefresh);
-  $("#header-client-count").textContent = `${calculations.clients.length} active clients`;
+  $("#last-refresh").textContent = formatDate(dashboardData.metrics.lastDataRefresh);
+  $("#header-client-count").textContent = `${calculations.activeClients.length} active clients`;
   $("#header-tier-coverage").textContent = `${calculations.assignedCount} assigned / ${calculations.byTier.Unassigned.length} unassigned`;
 }
 
 function healthClients() {
-  return calculations.clients.map(client => ({ ...client, health: importedSnapshot?.clients?.[client.name] || null }));
+  return calculations.activeClients.map(client => ({ ...client, health: importedSnapshot?.clients?.[client.name] || null }));
 }
 
 function healthSummary() {
   const rows = healthClients().filter(client => client.health);
-  const counts = { "At Risk": 0, Watch: 0, Healthy: 0, "No Data": calculations.clients.length - rows.length };
+  const counts = { "At Risk": 0, Watch: 0, Healthy: 0, "No Data": calculations.activeClients.length - rows.length };
   rows.forEach(client => { counts[client.health.band] = (counts[client.health.band] || 0) + 1; });
   const scores = rows.map(client => client.health.score).filter(Number.isFinite);
   const bookScore = scores.length ? Math.round(scores.reduce((sum, value) => sum + value, 0) / scores.length) : null;
@@ -62,12 +61,10 @@ function healthSummary() {
 
 function operationalSummary() {
   if (!importedSnapshot?.clients) return null;
-  const clients = Object.values(importedSnapshot.clients);
+  const activeNames = new Set(calculations.activeClients.map(client => client.name));
+  const clients = Object.values(importedSnapshot.clients).filter(client => activeNames.has(client.name));
   const unmatched = new Set(Object.values(importedSnapshot.exceptions || {}).flat());
   return {
-    outstandingAr: clients.reduce((sum, client) => sum + Number(client.ar?.totalOutstanding || 0), 0),
-    clientsWithBalance: clients.filter(client => Number(client.ar?.totalOutstanding || 0) > 0).length,
-    pastDueClients: clients.filter(client => client.ar?.bucket && client.ar.bucket !== "Current").length,
     mappedOpenTickets: clients.reduce((sum, client) => sum + Number(client.tickets?.openCount || 0), 0),
     mappedTicketVolume: clients.reduce((sum, client) => sum + Number(client.tickets?.volumeCount || 0), 0),
     agedTicketClients: clients.filter(client => Number(client.tickets?.oldestOpenAgeDays || 0) >= 21).length,
@@ -79,16 +76,19 @@ function renderPrimaryMetrics() {
   const health = healthSummary();
   const operations = operationalSummary();
   const metrics = operations ? [
-    { label: "Active clients", value: calculations.clients.length, context: "Authoritative portfolio", tone: "primary" },
+    { label: "Active clients", value: calculations.activeClients.length, context: "Current portfolio", tone: "primary" },
+    { label: "Churned clients", value: calculations.churnedClients.length, context: dashboardData.metrics.reportingPeriod, tone: "attention" },
+    { label: "Retention", value: calculations.portfolio.retention, context: "172 of 175 retained" },
+    { label: "Churn rate", value: calculations.portfolio.churn, context: "3 of 175 clients", tone: "risk" },
     { label: "Book health", value: health.bookScore, context: health.provisional ? "Provisional · source review" : "ClientPulse v1" },
     { label: "At Risk", value: health.counts["At Risk"], context: `${health.counts.Watch} additional Watch`, tone: "risk" },
-    { label: "Healthy clients", value: health.counts.Healthy, context: `${Math.round(health.counts.Healthy / calculations.clients.length * 100)}% of portfolio`, tone: "healthy" },
-    { label: "Outstanding AR", value: formatCurrency(operations.outstandingAr), context: `${operations.clientsWithBalance} clients with balances` },
-    { label: "Past-due clients", value: operations.pastDueClients, context: "31+ day AR bucket", tone: "attention" },
+    { label: "Healthy clients", value: health.counts.Healthy, context: `${Math.round(health.counts.Healthy / calculations.activeClients.length * 100)}% of active portfolio`, tone: "healthy" },
     { label: "Mapped open tickets", value: operations.mappedOpenTickets, context: `${importedSnapshot.sources.openTickets.rowCount} total source rows` },
-    { label: "Aged-ticket clients", value: operations.agedTicketClients, context: "Oldest open ticket is 21+ days", tone: "attention" }
   ] : [
-    { label: "Active clients", value: calculations.clients.length, context: "Authoritative portfolio", tone: "primary" },
+    { label: "Active clients", value: calculations.activeClients.length, context: "Current portfolio", tone: "primary" },
+    { label: "Churned clients", value: calculations.churnedClients.length, context: dashboardData.metrics.reportingPeriod, tone: "attention" },
+    { label: "Retention", value: calculations.portfolio.retention, context: "172 of 175 retained" },
+    { label: "Churn rate", value: calculations.portfolio.churn, context: "3 of 175 clients", tone: "risk" },
     { label: "Book health", value: health.bookScore, context: "Upload weekly sources" },
     { label: "At Risk", value: "No Data", context: "Health source set required", tone: "empty" },
     { label: "Healthy clients", value: "No Data", context: "Health source set required", tone: "empty" }
@@ -105,7 +105,7 @@ function renderPrimaryMetrics() {
   const source = importedSnapshot.sources;
   [
     ["Data mode", "Latest published snapshot"],
-    ["AR as of", formatDate(source.ar.asOf)],
+    ["Lifecycle update", `${calculations.churnedClients.length} churned · ${calculations.activeClients.length} active`],
     ["Tickets as of", formatDate(source.openTickets.asOf)],
     ["Ticket volume", `${operations.mappedTicketVolume} mapped / ${source.ticketVolume.rowCount} rows`],
     ["Source review", `${operations.unmatchedCount} unmatched names · Provisional`]
@@ -157,7 +157,7 @@ function renderHealth() {
     const band = client.health?.band || "No Data";
     return (!query || client.name.toLocaleLowerCase().includes(query)) && (filter === "All health states" || band === filter);
   });
-  $("#health-result-count").textContent = `${rows.length} of ${calculations.clients.length} clients`;
+  $("#health-result-count").textContent = `${rows.length} of ${calculations.activeClients.length} active clients`;
   grid.replaceChildren();
   rows.forEach(client => {
     const health = client.health;
@@ -213,7 +213,7 @@ function renderTierPerformance() {
     append(method, "strong", "", "Tier calculation pending");
     append(method, "p", "", "Upload the three weekly source reports in the Data Hub to calculate the available-data tier score.");
   }
-  renderDistribution($("#tier-distribution"), counts, calculations.clients.length);
+  renderDistribution($("#tier-distribution"), counts, calculations.activeClients.length);
   $("#tier-panels").replaceChildren(...TIERS.map(tier => tierPanel(tier, calculations.tierMetrics[tier])));
 
   const tierOrder = Object.fromEntries(TIERS.map((tier, index) => [tier, index]));
@@ -244,7 +244,7 @@ function renderAttention() {
     { label: "Tier assignments needed", value: calculations.byTier.Unassigned.length, context: "Current tier is Unassigned", tone: "attention" },
     { label: "Survey follow-ups", value: calculations.surveyFollowupCount, context: dashboardData.metrics.reportingPeriod, tone: "attention" },
     { label: "Client ID reviews", value: calculations.idReviewCount, context: "Registry reconciliation", tone: "attention" },
-    { label: "Churned this period", value: "No Data", context: "Lifecycle history missing", tone: "attention" }
+    { label: "Churned this period", value: calculations.churnedClients.length, context: calculations.portfolio.churn, tone: "attention" }
   ]);
   $("#tier-assignment-count").textContent = `${calculations.byTier.Unassigned.length} clients`;
   renderSimpleRows($("#tier-assignment-body"), calculations.byTier.Unassigned, [

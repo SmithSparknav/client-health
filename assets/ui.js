@@ -1,4 +1,4 @@
-import { TIERS, display } from "./metrics.js?v=20260810-8";
+import { TIERS, display } from "./metrics.js?v=20260817-1";
 
 export const el = (tag, className = "", text = undefined) => {
   const element = document.createElement(tag);
