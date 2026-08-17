@@ -84,7 +84,7 @@ export function calculateDashboard(data) {
     tierMetrics,
     validation,
     portfolio: aggregateClients(clients),
-    assignedCount: clients.length - byTier.Unassigned.length,
+    assignedCount: activeClients.length - byTier.Unassigned.length,
     idMatchedCount: clients.filter(client => client.clientId).length,
     idReviewCount: clients.filter(client => client.clientIdStatus === "Needs Client ID Review").length,
     surveyFollowupCount: clients.filter(client => !client.lastSurvey).length
