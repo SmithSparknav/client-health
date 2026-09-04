@@ -1,14 +1,14 @@
-import { createDataAdapter } from "./data-adapter.js?v=20260904-4";
-import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260904-4";
+import { createDataAdapter } from "./data-adapter.js?v=20260904-5";
+import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260904-5";
 import {
   calculateClientPulse, clearSnapshot, loadPublishedSnapshot, loadSnapshot, parseArReport, parseCalendar,
   parseOpenTickets, parseTicketVolume, saveSnapshot
-} from "./importer.js?v=20260904-4";
+} from "./importer.js?v=20260904-5";
 import {
   append, buildTableHead, el, emptyState, metricCard, populateSelect,
   portfolioRow, renderDistribution, renderMetricGrid, renderSimpleRows,
   statusPill, tierPanel, tierPill
-} from "./ui.js?v=20260904-4";
+} from "./ui.js?v=20260904-5";
 
 const PAGE_SIZE = 25;
 const RELEASE_CHECK_MS = 60_000;
@@ -265,13 +265,23 @@ function renderAttention() {
 
 function renderUpcoming() {
   const contacts = dashboardData.contacts.contacts
-    .filter(contact => contact.nextContactDue)
-    .sort((a, b) => new Date(a.nextContactDue) - new Date(b.nextContactDue));
+    .filter(contact => contact.status === "Scheduled" && contact.scheduledDate)
+    .sort((a, b) => new Date(a.scheduledDate) - new Date(b.scheduledDate));
   const container = $("#upcoming-contacts");
   container.replaceChildren();
   if (!contacts.length) {
-    container.appendChild(emptyState("No qualifying contact schedule available", "Next-contact dates require a current tier, the applicable cadence anchor, and reliable relationship-meeting history."));
+    container.appendChild(emptyState("No scheduled client meetings available", "Scheduled QBRs and other verified client meetings will appear here."));
+    return;
   }
+  contacts.forEach(contact => {
+    const row = append(container, "div", "calendar-row");
+    const date = append(row, "time", "calendar-row__date", formatDate(contact.scheduledDate));
+    date.dateTime = contact.scheduledDate;
+    const copy = append(row, "div", "calendar-row__copy");
+    append(copy, "strong", "", contact.clientName);
+    append(copy, "span", "", `${contact.contactType} · ${contact.scheduledTime} · ${contact.tier}`);
+    append(row, "span", "status-pill status-pill--active", contact.status);
+  });
 }
 
 function renderSurvey() {
