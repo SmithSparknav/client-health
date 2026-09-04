@@ -2,6 +2,7 @@
   "schemaVersion": "1.1",
   "reportingPeriod": "2026 Q3",
   "outreach": {
+    "category": "General outreach",
     "activity": "QBR scheduling invitation",
     "status": "Delivered",
     "sourceFile": "QBR_Send_Status.xlsx",

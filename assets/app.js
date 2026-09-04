@@ -1,14 +1,14 @@
-import { createDataAdapter } from "./data-adapter.js?v=20260904-2";
-import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260904-2";
+import { createDataAdapter } from "./data-adapter.js?v=20260904-3";
+import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260904-3";
 import {
   calculateClientPulse, clearSnapshot, loadPublishedSnapshot, loadSnapshot, parseArReport, parseCalendar,
   parseOpenTickets, parseTicketVolume, saveSnapshot
-} from "./importer.js?v=20260904-2";
+} from "./importer.js?v=20260904-3";
 import {
   append, buildTableHead, el, emptyState, metricCard, populateSelect,
   portfolioRow, renderDistribution, renderMetricGrid, renderSimpleRows,
   statusPill, tierPanel, tierPill
-} from "./ui.js?v=20260904-2";
+} from "./ui.js?v=20260904-3";
 
 const PAGE_SIZE = 25;
 const RELEASE_CHECK_MS = 60_000;
@@ -189,10 +189,10 @@ function renderContactPerformance() {
   const outreachRate = targetedCount ? `${Math.round(deliveredCount / targetedCount * 100)}%` : "No Data";
   const overview = $("#contact-overview");
   overview.replaceChildren();
-  append(overview, "p", "panel-label", "QBR OUTREACH");
+  append(overview, "p", "panel-label", "OUTREACH COVERAGE");
   append(overview, "strong", "contact-overview__value", deliveredCount || "No Data");
   append(overview, "p", "panel-copy", deliveredCount
-    ? `${outreach.activity || "QBR invitation"} delivered to ${deliveredCount} clients. Delivery confirms outreach, not a completed meeting.`
+    ? `${deliveredCount} clients reached through verified outreach. Current activity: ${outreach.activity || "Not specified"}. Outreach does not by itself confirm a completed meeting.`
     : "No verified outreach delivery data available.");
   const tierList = append(overview, "div", "contact-tier-list");
   TIERS.forEach(tier => {
@@ -202,7 +202,7 @@ function renderContactPerformance() {
   });
   renderMetricGrid($("#contact-summary"), [
     { label: "Clients contacted", value: deliveredCount || "No Data", context: outreach.status || "Delivery status required" },
-    { label: "QBR invitations targeted", value: targetedCount || "No Data", context: outreach.sourceFile || dashboardData.metrics.reportingPeriod },
+    { label: "Outreach recipients targeted", value: targetedCount || "No Data", context: outreach.activity || dashboardData.metrics.reportingPeriod },
     { label: "Delivery rate", value: outreachRate, context: targetedCount ? `${deliveredCount} of ${targetedCount}` : "No Data" },
     { label: "Qualifying meetings", value: display(portfolio.completed), context: "Meeting ledger required" },
     { label: "Meeting contact rate", value: portfolio.contactRate, context: "Qualifying meetings only" },
