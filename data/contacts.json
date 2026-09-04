@@ -1,5 +1,29 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "reportingPeriod": "2026 Q3",
+  "outreach": {
+    "activity": "QBR scheduling invitation",
+    "status": "Delivered",
+    "sourceFile": "QBR_Send_Status.xlsx",
+    "targetedCount": 70,
+    "deliveredCount": 67,
+    "bouncedCount": 3,
+    "deliveredClients": [
+      "AccruePartners", "C&C Boiler Sales & Service", "Charlotte Paint", "Concorde Construction", "ELM Carolina",
+      "Ed Wallace Construction", "Edgewater Pools", "Herlocker Mechanical", "LandDesign", "Litaker Insurance",
+      "Lowry Insurance", "Ludvig Svensson INC", "Luquire", "Matthews Building Supply", "Messer Financial Group",
+      "Outlook Flooring", "QMax Industries", "Ridgecrest Foundation", "Zanes Law", "Andersen Services",
+      "Bobo's Wrecker Service", "C2 Design", "Carolina Floors", "Community Medical", "Destum Partners",
+      "Direct Energy Partners", "East Coast Masonry & Stone", "Esteem Electric", "FMK Architects", "Fig Tree Restaurant",
+      "Graphics International", "ICG Capital Securities", "Labor One", "M Watkins Construction", "Matt Jelnicky",
+      "Middle C Jazz", "Neals Grading", "Ormond Group", "Portus Wealth Advisors", "Powerhouse Mechanical",
+      "Project Life Movement", "Reynolds Trucking", "Saint Margaret's Episcopal Church", "Smith & Christensen", "Southern Piedmont Piping & Fabrication",
+      "Swindell Law Firm", "TLG Law", "Tony Pope", "Williams Electrical", "Zar Custom Homes",
+      "AB Floor Solutions", "Barringer & Barringer", "Catoe Family Farms", "Colorful Gypsy", "Cube Noda",
+      "Dickerson Architecture", "Jamie Oliver", "Jim Riggins", "Kaylee Smith", "Kelly Barker Sutton",
+      "Kent Jones Law", "Martin Eveleigh", "New Old Remodeling", "Site Services of the Carolina's", "SiteWork Estimating Service",
+      "Sovren Group", "Unthinkable"
+    ]
+  },
   "contacts": []
 }

@@ -1,14 +1,14 @@
-import { createDataAdapter } from "./data-adapter.js?v=20260904-1";
-import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260904-1";
+import { createDataAdapter } from "./data-adapter.js?v=20260904-2";
+import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260904-2";
 import {
   calculateClientPulse, clearSnapshot, loadPublishedSnapshot, loadSnapshot, parseArReport, parseCalendar,
   parseOpenTickets, parseTicketVolume, saveSnapshot
-} from "./importer.js?v=20260904-1";
+} from "./importer.js?v=20260904-2";
 import {
   append, buildTableHead, el, emptyState, metricCard, populateSelect,
   portfolioRow, renderDistribution, renderMetricGrid, renderSimpleRows,
   statusPill, tierPanel, tierPill
-} from "./ui.js?v=20260904-1";
+} from "./ui.js?v=20260904-2";
 
 const PAGE_SIZE = 25;
 const RELEASE_CHECK_MS = 60_000;
@@ -182,23 +182,30 @@ function renderHealth() {
 
 function renderContactPerformance() {
   const portfolio = calculations.portfolio;
+  const outreach = dashboardData.contacts.outreach || {};
+  const deliveredClients = new Set(outreach.deliveredClients || []);
+  const deliveredCount = deliveredClients.size || Number(outreach.deliveredCount || 0);
+  const targetedCount = Number(outreach.targetedCount || 0);
+  const outreachRate = targetedCount ? `${Math.round(deliveredCount / targetedCount * 100)}%` : "No Data";
   const overview = $("#contact-overview");
   overview.replaceChildren();
-  append(overview, "p", "panel-label", "OVERALL CONTACT RATE");
-  append(overview, "strong", "contact-overview__value", portfolio.contactRate);
-  append(overview, "p", "panel-copy", "Awaiting assigned tiers and a production qualifying-contact ledger.");
+  append(overview, "p", "panel-label", "QBR OUTREACH");
+  append(overview, "strong", "contact-overview__value", deliveredCount || "No Data");
+  append(overview, "p", "panel-copy", deliveredCount
+    ? `${outreach.activity || "QBR invitation"} delivered to ${deliveredCount} clients. Delivery confirms outreach, not a completed meeting.`
+    : "No verified outreach delivery data available.");
   const tierList = append(overview, "div", "contact-tier-list");
   TIERS.forEach(tier => {
     const row = append(tierList, "div", "contact-tier-list__row");
     append(row, "span", "", tier);
-    append(row, "strong", "", calculations.tierMetrics[tier].contactRate);
+    append(row, "strong", "", `${calculations.byTier[tier].filter(client => deliveredClients.has(client.name)).length} reached`);
   });
   renderMetricGrid($("#contact-summary"), [
-    { label: "Expected contacts", value: display(portfolio.expected), context: dashboardData.metrics.reportingPeriod },
-    { label: "Completed contacts", value: display(portfolio.completed), context: dashboardData.metrics.reportingPeriod },
-    { label: "Additional meetings", value: display(portfolio.additionalMeetings), context: "Above required minimum" },
-    { label: "Clients on cadence", value: "No Data", context: "Contact ledger required" },
-    { label: "Behind cadence", value: "No Data", context: "Contact ledger required" },
+    { label: "Clients contacted", value: deliveredCount || "No Data", context: outreach.status || "Delivery status required" },
+    { label: "QBR invitations targeted", value: targetedCount || "No Data", context: outreach.sourceFile || dashboardData.metrics.reportingPeriod },
+    { label: "Delivery rate", value: outreachRate, context: targetedCount ? `${deliveredCount} of ${targetedCount}` : "No Data" },
+    { label: "Qualifying meetings", value: display(portfolio.completed), context: "Meeting ledger required" },
+    { label: "Meeting contact rate", value: portfolio.contactRate, context: "Qualifying meetings only" },
     { label: "Clients overdue", value: display(portfolio.overdue), context: "Objective due dates only" }
   ]);
 }
