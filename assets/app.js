@@ -1,14 +1,14 @@
-import { createDataAdapter } from "./data-adapter.js?v=20260904-3";
-import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260904-3";
+import { createDataAdapter } from "./data-adapter.js?v=20260904-4";
+import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260904-4";
 import {
   calculateClientPulse, clearSnapshot, loadPublishedSnapshot, loadSnapshot, parseArReport, parseCalendar,
   parseOpenTickets, parseTicketVolume, saveSnapshot
-} from "./importer.js?v=20260904-3";
+} from "./importer.js?v=20260904-4";
 import {
   append, buildTableHead, el, emptyState, metricCard, populateSelect,
   portfolioRow, renderDistribution, renderMetricGrid, renderSimpleRows,
   statusPill, tierPanel, tierPill
-} from "./ui.js?v=20260904-3";
+} from "./ui.js?v=20260904-4";
 
 const PAGE_SIZE = 25;
 const RELEASE_CHECK_MS = 60_000;
@@ -187,6 +187,7 @@ function renderContactPerformance() {
   const deliveredCount = deliveredClients.size || Number(outreach.deliveredCount || 0);
   const targetedCount = Number(outreach.targetedCount || 0);
   const outreachRate = targetedCount ? `${Math.round(deliveredCount / targetedCount * 100)}%` : "No Data";
+  const scheduledMeetings = dashboardData.contacts.contacts.filter(contact => contact.status === "Scheduled");
   const overview = $("#contact-overview");
   overview.replaceChildren();
   append(overview, "p", "panel-label", "OUTREACH COVERAGE");
@@ -204,7 +205,7 @@ function renderContactPerformance() {
     { label: "Clients contacted", value: deliveredCount || "No Data", context: outreach.status || "Delivery status required" },
     { label: "Outreach recipients targeted", value: targetedCount || "No Data", context: outreach.activity || dashboardData.metrics.reportingPeriod },
     { label: "Delivery rate", value: outreachRate, context: targetedCount ? `${deliveredCount} of ${targetedCount}` : "No Data" },
-    { label: "Qualifying meetings", value: display(portfolio.completed), context: "Meeting ledger required" },
+    { label: "Qualifying meetings", value: scheduledMeetings.length || "No Data", context: scheduledMeetings.length ? "Scheduled QBRs" : "Meeting ledger required" },
     { label: "Meeting contact rate", value: portfolio.contactRate, context: "Qualifying meetings only" },
     { label: "Clients overdue", value: display(portfolio.overdue), context: "Objective due dates only" }
   ]);

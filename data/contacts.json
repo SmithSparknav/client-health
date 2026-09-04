@@ -26,5 +26,21 @@
       "Sovren Group", "Unthinkable"
     ]
   },
-  "contacts": []
+  "meetings": {
+    "meetingType": "Quarterly Business Review",
+    "status": "Scheduled",
+    "scheduledCount": 9,
+    "sourceFile": "QBR_Send_Status.xlsx"
+  },
+  "contacts": [
+    { "clientName": "QMax Industries", "tier": "Tier 1", "contactType": "Quarterly Business Review", "status": "Scheduled", "scheduledDate": "2026-09-10", "scheduledTime": "2:30-3:30pm" },
+    { "clientName": "C&C Boiler Sales & Service", "tier": "Tier 1", "contactType": "Quarterly Business Review", "status": "Scheduled", "scheduledDate": "2026-09-11", "scheduledTime": "2:30-3:30pm" },
+    { "clientName": "Lowry Insurance", "tier": "Tier 1", "contactType": "Quarterly Business Review", "status": "Scheduled", "scheduledDate": "2026-09-14", "scheduledTime": "10:30am" },
+    { "clientName": "Powerhouse Mechanical", "tier": "Tier 2", "contactType": "Quarterly Business Review", "status": "Scheduled", "scheduledDate": "2026-09-15", "scheduledTime": "10:30am" },
+    { "clientName": "Herlocker Mechanical", "tier": "Tier 1", "contactType": "Quarterly Business Review", "status": "Scheduled", "scheduledDate": "2026-09-17", "scheduledTime": "10:30am" },
+    { "clientName": "Smith & Christensen", "tier": "Tier 2", "contactType": "Quarterly Business Review", "status": "Scheduled", "scheduledDate": "2026-09-23", "scheduledTime": "11:00am" },
+    { "clientName": "Ed Wallace Construction", "tier": "Tier 1", "contactType": "Quarterly Business Review", "status": "Scheduled", "scheduledDate": "2026-09-28", "scheduledTime": "11:00am" },
+    { "clientName": "FMK Architects", "tier": "Tier 2", "contactType": "Quarterly Business Review", "status": "Scheduled", "scheduledDate": "2026-10-08", "scheduledTime": "2:30pm" },
+    { "clientName": "Portus Wealth Advisors", "tier": "Tier 2", "contactType": "Quarterly Business Review", "status": "Scheduled", "scheduledDate": "2026-10-29", "scheduledTime": "10:30am" }
+  ]
 }
