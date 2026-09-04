@@ -1,0 +1,25 @@
+{
+  "source": "SparkNav_Client_Tier_List_1.pdf",
+  "sourceDate": "2026-08-28",
+  "sourceRows": 150,
+  "sourceTierCounts": {
+    "Tier 1": 38,
+    "Tier 2": 71,
+    "Tier 3": 41
+  },
+  "matchedToMasterPopulation": 145,
+  "loadedTierCounts": {
+    "Tier 1": 36,
+    "Tier 2": 69,
+    "Tier 3": 40,
+    "Unassigned": 30
+  },
+  "unmatchedSourceClients": [
+    "Carolina Construction Service",
+    "Promera LLC",
+    "Carroll Jenkins",
+    "Williams Buick GMC",
+    "Wolf Pond Baptist Church"
+  ],
+  "note": "Unmatched source clients were not added to the authoritative 175-client population. Existing clients absent from the source remain Unassigned."
+}

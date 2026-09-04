@@ -1,33 +1,21 @@
-# Available Data Tier Score v1
+# SparkNav Value Score Tier Model
 
-The current dashboard tiers the full 175-client population with the two documented factors for which reliable weekly source data is presently available.
+The approved source is `SparkNav_Client_Tier_List_1.pdf`, dated August 28, 2026. The source contains 150 unique client rows: 38 Tier 1, 71 Tier 2, and 41 Tier 3.
 
-## Inputs
+## Assignment rule
 
-- Financial exposure: total outstanding AR balance from the Tuesday SeedSpark Accounting AR Aging report.
-- Ticket volume: number of tickets in the uploaded Autotask Ticket Volume reporting period.
+Tier is determined from monthly average revenue using a log-scaled Value Score normalized across the client book.
 
-The original proposed weights were 35% Invoice Amount and 30% Ticket Volume, with 35% reserved for unavailable Client Size and Strategic Value inputs. To create a complete current-data score without inventing values, the two available weights are normalized:
+- Tier 1: Value Score 0.75-1.00, or an approved automatic leadership override.
+- Tier 2: Value Score 0.50-0.74.
+- Tier 3: Value Score 0.00-0.49.
 
-- Financial exposure: `35 / 65 = 53.85%`
-- Ticket volume: `30 / 65 = 46.15%`
+Support Load is displayed separately for cost-to-serve review. It does not change the tier.
 
-## Calculation
+## Reconciliation to the dashboard population
 
-Each factor is ranked from 1 through 10 against the current 175-client portfolio. Zero or absent activity receives rank 1. Positive values receive a rank based on their relative position among positive values.
+- 145 source clients matched the established 175-client master population.
+- 30 master-population clients were not listed and remain Unassigned.
+- Five source clients did not match the master population and were not added automatically: Carolina Construction Service, Promera LLC, Carroll Jenkins, Williams Buick GMC, and Wolf Pond Baptist Church.
 
-```text
-Available Tier Score =
-  (Financial Exposure Rank x 53.85%)
-  + (Ticket Volume Rank x 46.15%)
-```
-
-Clients are sorted by Available Tier Score, then financial rank, then ticket-volume rank, then canonical client name for a stable tie break.
-
-- Tier 1: top third (59 clients in a 175-client population)
-- Tier 2: middle third (58 clients)
-- Tier 3: bottom third (58 clients)
-
-## Interpretation
-
-This tier score determines proactive Account Management cadence; it does not change service quality or ClientPulse health. Payment Health continues to use AR aging buckets and caps separately. When recurring-revenue, Client Size, or Strategic Value data becomes available, the model can be versioned and expanded without rewriting the dashboard.
+See `data/tier-review.json` for the machine-readable reconciliation. Tiering and ClientPulse health scoring remain separate models.

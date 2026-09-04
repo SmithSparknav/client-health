@@ -55,7 +55,7 @@ Calendar import supports Outlook ICS and tabular exports. Client matching uses c
 
 The score engine is versioned as `ClientPulse v1`. Ticket Volume does not affect the current score. See `CLIENTPULSE_MODEL.md` for the calculation and caps.
 
-Tiering is a separate calculation from health. `Available Data Tier Score v1` uses normalized AR financial exposure and Ticket Volume rankings to split the portfolio into thirds. See `TIERING_MODEL.md`.
+Tiering is separate from health. The approved SparkNav Value Score model uses log-scaled monthly average revenue; Support Load is displayed separately and does not affect tier. See `TIERING_MODEL.md`.
 
 ## Data files
 

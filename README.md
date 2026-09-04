@@ -45,7 +45,7 @@ The three spreadsheets are parsed in the browser and are not sent to GitHub. The
 
 The import validates source structure, reconciles names against the 175-client master population, calculates the documented ClientPulse v1 score, and reports unmatched names and potential report truncation. Calendar matches remain candidates and do not count as qualifying Account Management meetings.
 
-The same import calculates `Available Data Tier Score v1`: total outstanding AR is weighted 53.85%, Ticket Volume is weighted 46.15%, and the ranked portfolio is divided into thirds. Health scoring and tiering remain separate models.
+Tier assignments come from the approved August 28, 2026 SparkNav Client Tier List. Its Value Score uses log-scaled monthly average revenue; Support Load is displayed separately and does not alter tier. Weekly imports refresh health inputs while preserving these approved tiers. Health scoring and tiering remain separate models.
 
 The pinned SheetJS browser distribution is loaded with Subresource Integrity to parse Excel files. An internet connection is required for that parser unless it is vendored locally in a later restricted-hosting build.
 

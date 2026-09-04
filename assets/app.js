@@ -1,14 +1,14 @@
-import { createDataAdapter } from "./data-adapter.js?v=20260817-2";
-import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260817-2";
+import { createDataAdapter } from "./data-adapter.js?v=20260904-1";
+import { TIERS, calculateDashboard, display } from "./metrics.js?v=20260904-1";
 import {
   calculateClientPulse, clearSnapshot, loadPublishedSnapshot, loadSnapshot, parseArReport, parseCalendar,
   parseOpenTickets, parseTicketVolume, saveSnapshot
-} from "./importer.js?v=20260817-2";
+} from "./importer.js?v=20260904-1";
 import {
   append, buildTableHead, el, emptyState, metricCard, populateSelect,
   portfolioRow, renderDistribution, renderMetricGrid, renderSimpleRows,
   statusPill, tierPanel, tierPill
-} from "./ui.js?v=20260817-2";
+} from "./ui.js?v=20260904-1";
 
 const PAGE_SIZE = 25;
 const RELEASE_CHECK_MS = 60_000;
@@ -208,9 +208,8 @@ function renderTierPerformance() {
   const method = $("#tier-method");
   method.replaceChildren();
   if (importedSnapshot?.tieringModel) {
-    append(method, "strong", "", "Available Data Tier Score v1");
-    const approvedCount = Object.values(importedSnapshot.clients || {}).filter(client => client.tiering?.override).length;
-    append(method, "p", "", `Financial exposure is ranked from total outstanding AR and weighted 54%. Ticket volume is weighted 46%. The portfolio is divided into top, middle, and bottom thirds, then ${approvedCount} approved manual assignments are preserved.`);
+    append(method, "strong", "", importedSnapshot.tieringModel.name);
+    append(method, "p", "", "Tier is determined by monthly average revenue using a log-scaled Value Score. Support Load is shown separately for cost-to-serve review and does not change the tier. Clients absent from the approved list remain Unassigned.");
   } else {
     append(method, "strong", "", "Tier calculation pending");
     append(method, "p", "", "Upload the three weekly source reports in the Data Hub to calculate the available-data tier score.");
@@ -223,19 +222,18 @@ function renderTierPerformance() {
     ...client,
     tiering: importedSnapshot?.clients?.[client.name]?.tiering || null
   })).sort((a, b) =>
-    Number(Boolean(b.tiering?.override)) - Number(Boolean(a.tiering?.override)) ||
+    Number(b.tier !== "Unassigned") - Number(a.tier !== "Unassigned") ||
     tierOrder[a.tier] - tierOrder[b.tier] ||
-    Number(b.tiering?.tierScore || 0) - Number(a.tiering?.tierScore || 0) ||
+    Number(b.tiering?.valueScore || 0) - Number(a.tiering?.valueScore || 0) ||
     a.name.localeCompare(b.name)
   );
-  buildTableHead($("#tier-roster-head"), ["Client", "Tier", "Assignment source", "Tier score", "Financial rank", "Ticket rank"]);
+  buildTableHead($("#tier-roster-head"), ["Client", "Tier", "Assignment source", "Value score", "Support load"]);
   renderSimpleRows($("#tier-roster-body"), roster, [
     { key: "name", className: "client-name" },
     { render: client => tierPill(client.tier) },
-    { render: client => statusPill(client.tiering?.override ? "Approved manual assignment" : "Available Data Tier Score v1", client.tiering?.override ? "active" : "no-data") },
-    { render: client => client.tiering?.tierScore ?? "No Data" },
-    { render: client => client.tiering?.financialRank ?? "No Data" },
-    { render: client => client.tiering?.ticketVolumeRank ?? "No Data" }
+    { render: client => statusPill(client.tiering?.tierSource || client.tierSource || "Needs tier review", client.tier === "Unassigned" ? "no-data" : "active") },
+    { render: client => client.tiering?.valueScore?.toFixed(2) ?? "No Data" },
+    { render: client => client.tiering?.supportLoadScore?.toFixed(2) ?? "Not stated" }
   ]);
 }
 
@@ -504,7 +502,7 @@ async function initialize() {
         const calculatedTier = snapshotTiering?.tier;
         if (calculatedTier) {
           client.tier = calculatedTier;
-          client.tierSource = snapshotTiering.tierSource || "Available Data Tier Score v1";
+          client.tierSource = snapshotTiering.tierSource || "Needs tier review";
         }
       });
     }
