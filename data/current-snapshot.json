@@ -3,11 +3,10 @@
   "generatedAt": "2026-08-10T16:05:44.741749-04:00",
   "scoringModel": "ClientPulse v1",
   "tieringModel": {
-    "name": "Available Data Tier Score v1",
-    "financialFactor": "Total outstanding AR balance",
-    "financialWeight": 0.5384615384615384,
-    "ticketVolumeWeight": 0.46153846153846156,
-    "populationSplit": "Top, middle, and bottom thirds"
+    "name": "SparkNav Value Score Tier Model",
+    "source": "SparkNav Client Tier List - Aug 28, 2026",
+    "valueFactor": "Monthly average revenue, log-scaled",
+    "supportLoadTreatment": "Displayed separately; not blended into tier"
   },
   "sources": {
     "ar": {
@@ -62,8 +61,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.47,
+        "supportLoadScore": 0.0
       }
     },
     "AccruePartners": {
@@ -96,10 +100,12 @@
         "ticketVolumeRank": 9,
         "tierScore": 9.0,
         "tier": "Tier 1",
-        "method": "Approved Tier Override",
+        "method": "SparkNav Client Tier List",
         "calculatedTier": "Tier 1",
         "override": true,
-        "tierSource": "Approved manual assignment"
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "valueScore": 0.85,
+        "supportLoadScore": null
       }
     },
     "All Climate Storage": {
@@ -131,8 +137,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.39,
+        "supportLoadScore": 0.0
       }
     },
     "Allen's Grading": {
@@ -164,8 +175,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.46,
+        "supportLoadScore": 0.0
       }
     },
     "Andersen Services": {
@@ -197,8 +213,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 7,
         "tierScore": 3.77,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.69,
+        "supportLoadScore": 0.4
       }
     },
     "Apex Ready Mix LLC": {
@@ -231,7 +252,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 2.62,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.64,
+        "supportLoadScore": 0.0
       }
     },
     "Appian Construction": {
@@ -263,8 +289,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.23,
+        "supportLoadScore": 0.0
       }
     },
     "Aspect Health": {
@@ -297,7 +328,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.66,
+        "supportLoadScore": 0.0
       }
     },
     "Avenue": {
@@ -330,7 +366,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.64,
+        "supportLoadScore": 0.3
       }
     },
     "Barefoot & Company": {
@@ -364,8 +405,13 @@
         "financialRank": 8,
         "ticketVolumeRank": 1,
         "tierScore": 4.77,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.62,
+        "supportLoadScore": 0.0
       }
     },
     "Barringer & Barringer": {
@@ -397,8 +443,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.41,
+        "supportLoadScore": 0.36
       }
     },
     "Blue Dot Readi-Mix": {
@@ -431,10 +482,12 @@
         "ticketVolumeRank": 10,
         "tierScore": 9.46,
         "tier": "Tier 1",
-        "method": "Approved Tier Override",
+        "method": "SparkNav Client Tier List",
         "calculatedTier": "Tier 1",
         "override": true,
-        "tierSource": "Approved manual assignment"
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "valueScore": 0.95,
+        "supportLoadScore": null
       }
     },
     "Bobo's Wrecker Service": {
@@ -467,7 +520,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.59,
+        "supportLoadScore": 0.0
       }
     },
     "C&C Boiler Sales & Service": {
@@ -500,7 +558,12 @@
         "ticketVolumeRank": 8,
         "tierScore": 4.23,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.88,
+        "supportLoadScore": 0.3
       }
     },
     "C2 Design": {
@@ -533,7 +596,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.54,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.51,
+        "supportLoadScore": 0.0
       }
     },
     "Caliber Construction Services": {
@@ -567,8 +635,13 @@
         "financialRank": 7,
         "ticketVolumeRank": 4,
         "tierScore": 5.62,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.62,
+        "supportLoadScore": 0.3
       }
     },
     "Carillon Independent Senior Living": {
@@ -601,7 +674,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.67,
+        "supportLoadScore": 0.0
       }
     },
     "Carolina Courts": {
@@ -633,8 +711,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.39,
+        "supportLoadScore": 0.0
       }
     },
     "Carolina Floors": {
@@ -667,7 +750,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.57,
+        "supportLoadScore": 0.0
       }
     },
     "Carolina Ingredients": {
@@ -700,10 +788,12 @@
         "ticketVolumeRank": 9,
         "tierScore": 4.69,
         "tier": "Tier 1",
-        "method": "Approved Tier Override",
+        "method": "SparkNav Client Tier List",
         "calculatedTier": "Tier 1",
         "override": true,
-        "tierSource": "Approved manual assignment"
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "valueScore": 0.93,
+        "supportLoadScore": null
       }
     },
     "Carolina Precision Grading": {
@@ -735,8 +825,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Carolyn Vanderberg": {
@@ -768,8 +861,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Catoe Family Farms": {
@@ -801,8 +897,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.38,
+        "supportLoadScore": 0.0
       }
     },
     "CAVOK Family Office": {
@@ -834,8 +935,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 8,
         "tierScore": 4.23,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.66,
+        "supportLoadScore": 0.0
       }
     },
     "Charlotte Growth": {
@@ -867,8 +973,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.39,
+        "supportLoadScore": 0.0
       }
     },
     "Charlotte Paint": {
@@ -901,7 +1012,12 @@
         "ticketVolumeRank": 6,
         "tierScore": 6.54,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.9,
+        "supportLoadScore": 0.53
       }
     },
     "Coleman Burnett": {
@@ -933,8 +1049,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.48,
+        "supportLoadScore": 0.0
       }
     },
     "Colorful Gypsy": {
@@ -966,8 +1087,13 @@
         "financialRank": 3,
         "ticketVolumeRank": 1,
         "tierScore": 2.08,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.43,
+        "supportLoadScore": 0.0
       }
     },
     "Community Medical": {
@@ -1000,7 +1126,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 3.15,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.69,
+        "supportLoadScore": 0.3
       }
     },
     "Concorde Construction": {
@@ -1033,7 +1164,12 @@
         "ticketVolumeRank": 6,
         "tierScore": 6.0,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.85,
+        "supportLoadScore": 0.22
       }
     },
     "Cube Noda": {
@@ -1065,8 +1201,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 4,
         "tierScore": 2.38,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.46,
+        "supportLoadScore": 0.0
       }
     },
     "D&L Ceramic Tile": {
@@ -1098,8 +1239,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.26,
+        "supportLoadScore": 0.0
       }
     },
     "Delta V": {
@@ -1132,7 +1278,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.7,
+        "supportLoadScore": 0.0
       }
     },
     "Dermatology, Laser & Vein Specialists": {
@@ -1164,8 +1315,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Destum Partners": {
@@ -1197,8 +1351,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 6,
         "tierScore": 3.31,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.74,
+        "supportLoadScore": 0.0
       }
     },
     "Dickerson Architecture": {
@@ -1230,8 +1389,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.36,
+        "supportLoadScore": 0.0
       }
     },
     "Digital Mouth Advertising": {
@@ -1265,8 +1429,13 @@
         "financialRank": 2,
         "ticketVolumeRank": 6,
         "tierScore": 3.85,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.62,
+        "supportLoadScore": 0.0
       }
     },
     "Direct Energy Partners": {
@@ -1298,8 +1467,13 @@
         "financialRank": 6,
         "ticketVolumeRank": 4,
         "tierScore": 5.08,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.68,
+        "supportLoadScore": 0.0
       }
     },
     "Dorchester and Manor": {
@@ -1331,8 +1505,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 1",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.77,
+        "supportLoadScore": 0.22
       }
     },
     "Dr. Nik": {
@@ -1364,8 +1543,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 4,
         "tierScore": 2.38,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.49,
+        "supportLoadScore": 0.0
       }
     },
     "DRAFT Ad Tech": {
@@ -1397,8 +1581,11 @@
         "financialRank": 6,
         "ticketVolumeRank": 1,
         "tierScore": 3.69,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Dry Dog Barriers": {
@@ -1430,8 +1617,13 @@
         "financialRank": 2,
         "ticketVolumeRank": 1,
         "tierScore": 1.54,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.31,
+        "supportLoadScore": 0.0
       }
     },
     "Dyer, Raines & Associates": {
@@ -1463,8 +1655,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 6,
         "tierScore": 3.31,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.56,
+        "supportLoadScore": 0.0
       }
     },
     "E2 Mechanical & Industrial Refrigeration": {
@@ -1497,7 +1694,12 @@
         "ticketVolumeRank": 7,
         "tierScore": 7.0,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.75,
+        "supportLoadScore": 0.53
       }
     },
     "East Coast Masonry & Stone": {
@@ -1530,7 +1732,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 2.62,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.63,
+        "supportLoadScore": 0.0
       }
     },
     "Easy Way Products Co": {
@@ -1562,8 +1769,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Ed Wallace Construction": {
@@ -1596,7 +1806,12 @@
         "ticketVolumeRank": 9,
         "tierScore": 8.46,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.81,
+        "supportLoadScore": 0.0
       }
     },
     "Edgewater Pools": {
@@ -1629,7 +1844,12 @@
         "ticketVolumeRank": 6,
         "tierScore": 3.31,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.8,
+        "supportLoadScore": 0.0
       }
     },
     "Egis Capital": {
@@ -1662,7 +1882,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.37,
+        "supportLoadScore": 0.0
       }
     },
     "ELM Carolina": {
@@ -1695,7 +1920,12 @@
         "ticketVolumeRank": 4,
         "tierScore": 6.69,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.8,
+        "supportLoadScore": 0.4
       }
     },
     "Empowered Leadership": {
@@ -1728,7 +1958,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.5,
+        "supportLoadScore": 0.0
       }
     },
     "Encore Luxury Coaches": {
@@ -1762,8 +1997,11 @@
         "financialRank": 10,
         "ticketVolumeRank": 1,
         "tierScore": 5.85,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Enviro-Master Services": {
@@ -1796,10 +2034,12 @@
         "ticketVolumeRank": 10,
         "tierScore": 10.0,
         "tier": "Tier 1",
-        "method": "Approved Tier Override",
+        "method": "SparkNav Client Tier List",
         "calculatedTier": "Tier 1",
         "override": true,
-        "tierSource": "Approved manual assignment"
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "valueScore": 0.93,
+        "supportLoadScore": null
       }
     },
     "Esteem Electric": {
@@ -1831,8 +2071,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.7,
+        "supportLoadScore": 0.0
       }
     },
     "Eternity Real Estate Group": {
@@ -1865,7 +2110,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.41,
+        "supportLoadScore": 0.0
       }
     },
     "Evans General Contractors": {
@@ -1897,8 +2147,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.62,
+        "supportLoadScore": 0.0
       }
     },
     "Fagus GreCon Inc.": {
@@ -1931,7 +2186,12 @@
         "ticketVolumeRank": 7,
         "tierScore": 8.08,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.86,
+        "supportLoadScore": 0.0
       }
     },
     "Fig Tree Restaurant": {
@@ -1964,7 +2224,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.54,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.58,
+        "supportLoadScore": 0.0
       }
     },
     "FMK Architects": {
@@ -1996,8 +2261,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 6,
         "tierScore": 3.31,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.74,
+        "supportLoadScore": 0.36
       }
     },
     "Front Light Building Co.": {
@@ -2029,8 +2299,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Gala Affairs": {
@@ -2063,7 +2336,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 3.15,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.63,
+        "supportLoadScore": 0.0
       }
     },
     "Gary Frey": {
@@ -2095,8 +2373,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.58,
+        "supportLoadScore": 0.0
       }
     },
     "Graphics International": {
@@ -2128,8 +2411,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.58,
+        "supportLoadScore": 0.0
       }
     },
     "Hancock Landscape Services": {
@@ -2162,7 +2450,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.34,
+        "supportLoadScore": 0.0
       }
     },
     "Harry's Grille & Tavern": {
@@ -2194,8 +2487,13 @@
         "financialRank": 5,
         "ticketVolumeRank": 4,
         "tierScore": 4.54,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.65,
+        "supportLoadScore": 0.22
       }
     },
     "Herlocker Mechanical": {
@@ -2228,7 +2526,12 @@
         "ticketVolumeRank": 8,
         "tierScore": 8.54,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.9,
+        "supportLoadScore": 0.4
       }
     },
     "Hungry Horse East": {
@@ -2261,7 +2564,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.29,
+        "supportLoadScore": 0.0
       }
     },
     "Huntley Brothers": {
@@ -2294,7 +2602,12 @@
         "ticketVolumeRank": 8,
         "tierScore": 8.0,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.76,
+        "supportLoadScore": 0.0
       }
     },
     "ICG Capital Securities": {
@@ -2327,7 +2640,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.54,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.51,
+        "supportLoadScore": 0.0
       }
     },
     "Insurance Concepts": {
@@ -2360,7 +2678,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.26,
+        "supportLoadScore": 0.0
       }
     },
     "Interluxe": {
@@ -2392,8 +2715,13 @@
         "financialRank": 3,
         "ticketVolumeRank": 1,
         "tierScore": 2.08,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.43,
+        "supportLoadScore": 0.0
       }
     },
     "James Nelson": {
@@ -2425,8 +2753,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.54,
+        "supportLoadScore": 0.0
       }
     },
     "Jamie Oliver": {
@@ -2459,7 +2792,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.44,
+        "supportLoadScore": 0.0
       }
     },
     "JCS Carolinas": {
@@ -2492,7 +2830,12 @@
         "ticketVolumeRank": 7,
         "tierScore": 5.92,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.83,
+        "supportLoadScore": 0.0
       }
     },
     "Jencon Builders": {
@@ -2527,7 +2870,12 @@
         "ticketVolumeRank": 10,
         "tierScore": 10.0,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.76,
+        "supportLoadScore": 0.36
       }
     },
     "Jim Riggins": {
@@ -2560,7 +2908,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.39,
+        "supportLoadScore": 0.0
       }
     },
     "Kaylee Smith": {
@@ -2593,7 +2946,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.34,
+        "supportLoadScore": 0.0
       }
     },
     "Kelly Barker Sutton": {
@@ -2626,7 +2984,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.38,
+        "supportLoadScore": 0.0
       }
     },
     "Kent Jones Law": {
@@ -2658,8 +3021,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 6,
         "tierScore": 3.31,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.29,
+        "supportLoadScore": 0.0
       }
     },
     "Kuester Commercial": {
@@ -2692,7 +3060,12 @@
         "ticketVolumeRank": 8,
         "tierScore": 9.08,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.83,
+        "supportLoadScore": 0.36
       }
     },
     "Labor One": {
@@ -2724,8 +3097,13 @@
         "financialRank": 9,
         "ticketVolumeRank": 1,
         "tierScore": 5.31,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.71,
+        "supportLoadScore": 0.22
       }
     },
     "LandDesign": {
@@ -2757,8 +3135,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 6,
         "tierScore": 3.31,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 1",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.95,
+        "supportLoadScore": 0.22
       }
     },
     "Landworks Design Group": {
@@ -2791,7 +3174,12 @@
         "ticketVolumeRank": 7,
         "tierScore": 3.77,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.78,
+        "supportLoadScore": 0.43
       }
     },
     "Lanthorne Homes": {
@@ -2823,8 +3211,11 @@
         "financialRank": 8,
         "ticketVolumeRank": 1,
         "tierScore": 4.77,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Linnane Homes": {
@@ -2856,8 +3247,11 @@
         "financialRank": 2,
         "ticketVolumeRank": 1,
         "tierScore": 1.54,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Litaker Insurance": {
@@ -2890,7 +3284,12 @@
         "ticketVolumeRank": 8,
         "tierScore": 4.23,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.79,
+        "supportLoadScore": 0.0
       }
     },
     "Lowry Insurance": {
@@ -2923,7 +3322,12 @@
         "ticketVolumeRank": 9,
         "tierScore": 4.69,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.88,
+        "supportLoadScore": 0.57
       }
     },
     "LTP Properties": {
@@ -2955,8 +3359,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Ludvig Svensson INC": {
@@ -2988,8 +3395,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 1",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.76,
+        "supportLoadScore": 0.0
       }
     },
     "Luquire": {
@@ -3022,7 +3434,12 @@
         "ticketVolumeRank": 8,
         "tierScore": 8.0,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.88,
+        "supportLoadScore": 0.36
       }
     },
     "M Watkins Construction": {
@@ -3054,8 +3471,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.51,
+        "supportLoadScore": 0.0
       }
     },
     "Martin Eveleigh": {
@@ -3088,7 +3510,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.34,
+        "supportLoadScore": 0.0
       }
     },
     "Matt Jelnicky": {
@@ -3120,8 +3547,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.65,
+        "supportLoadScore": 0.0
       }
     },
     "Matthews Building Supply": {
@@ -3153,8 +3585,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 1",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.76,
+        "supportLoadScore": 0.0
       }
     },
     "McClancy Seasoning": {
@@ -3186,8 +3623,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Mechanical Systems & Services (MSS)": {
@@ -3220,10 +3660,12 @@
         "ticketVolumeRank": 10,
         "tierScore": 10.0,
         "tier": "Tier 1",
-        "method": "Approved Tier Override",
+        "method": "SparkNav Client Tier List",
         "calculatedTier": "Tier 1",
         "override": true,
-        "tierSource": "Approved manual assignment"
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "valueScore": 1.0,
+        "supportLoadScore": null
       }
     },
     "Mechanical Technologies & Solutions (MTS)": {
@@ -3255,8 +3697,11 @@
         "financialRank": 7,
         "ticketVolumeRank": 1,
         "tierScore": 4.23,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "MEP Services": {
@@ -3288,8 +3733,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Messer Financial Group": {
@@ -3322,7 +3770,12 @@
         "ticketVolumeRank": 9,
         "tierScore": 4.69,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.93,
+        "supportLoadScore": 0.48
       }
     },
     "Middle C Jazz": {
@@ -3355,7 +3808,12 @@
         "ticketVolumeRank": 4,
         "tierScore": 2.38,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.59,
+        "supportLoadScore": 0.0
       }
     },
     "Miller Services": {
@@ -3388,7 +3846,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 3.15,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.64,
+        "supportLoadScore": 0.0
       }
     },
     "Monastery Icons": {
@@ -3420,8 +3883,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 4,
         "tierScore": 2.38,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "MPV Properties": {
@@ -3453,8 +3919,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "NAPA IBS": {
@@ -3486,8 +3955,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "NARI of Greater Charlotte": {
@@ -3520,7 +3992,12 @@
         "ticketVolumeRank": 4,
         "tierScore": 2.38,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.56,
+        "supportLoadScore": 0.0
       }
     },
     "National Vacuum Systems": {
@@ -3553,7 +4030,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.47,
+        "supportLoadScore": 0.0
       }
     },
     "Neals Grading": {
@@ -3585,8 +4067,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.74,
+        "supportLoadScore": 0.36
       }
     },
     "New Dimensions": {
@@ -3619,7 +4106,12 @@
         "ticketVolumeRank": 4,
         "tierScore": 2.38,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.74,
+        "supportLoadScore": 0.0
       }
     },
     "New Forum": {
@@ -3652,7 +4144,12 @@
         "ticketVolumeRank": 10,
         "tierScore": 8.92,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.77,
+        "supportLoadScore": 0.48
       }
     },
     "New Old Remodeling": {
@@ -3684,8 +4181,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 4,
         "tierScore": 2.38,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.5,
+        "supportLoadScore": 0.0
       }
     },
     "Noble Insurance Advisors": {
@@ -3717,8 +4219,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 7,
         "tierScore": 3.77,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.69,
+        "supportLoadScore": 0.22
       }
     },
     "Ormond Group": {
@@ -3750,8 +4257,13 @@
         "financialRank": 4,
         "ticketVolumeRank": 8,
         "tierScore": 5.85,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.7,
+        "supportLoadScore": 0.3
       }
     },
     "Osborne Brothers Electric": {
@@ -3783,8 +4295,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Outlook Flooring": {
@@ -3817,7 +4332,12 @@
         "ticketVolumeRank": 10,
         "tierScore": 5.15,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.78,
+        "supportLoadScore": 0.3
       }
     },
     "Pageland Truck Works": {
@@ -3849,8 +4369,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.67,
+        "supportLoadScore": 0.0
       }
     },
     "Paint One": {
@@ -3882,8 +4407,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.69,
+        "supportLoadScore": 0.3
       }
     },
     "Parton Law": {
@@ -3916,7 +4446,12 @@
         "ticketVolumeRank": 6,
         "tierScore": 3.31,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.74,
+        "supportLoadScore": 0.4
       }
     },
     "PB Management": {
@@ -3948,8 +4483,13 @@
         "financialRank": 4,
         "ticketVolumeRank": 4,
         "tierScore": 4.0,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.68,
+        "supportLoadScore": 0.0
       }
     },
     "Piedmont Social House": {
@@ -3981,8 +4521,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.66,
+        "supportLoadScore": 0.0
       }
     },
     "PKG Law": {
@@ -4014,8 +4559,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Portus Wealth Advisors": {
@@ -4048,7 +4596,12 @@
         "ticketVolumeRank": 4,
         "tierScore": 2.38,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.67,
+        "supportLoadScore": 0.22
       }
     },
     "Powerhouse Mechanical": {
@@ -4080,8 +4633,13 @@
         "financialRank": 6,
         "ticketVolumeRank": 1,
         "tierScore": 3.69,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.69,
+        "supportLoadScore": 0.22
       }
     },
     "Precise Thermal": {
@@ -4113,8 +4671,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.52,
+        "supportLoadScore": 0.0
       }
     },
     "Price Brothers Plumbing": {
@@ -4146,8 +4709,11 @@
         "financialRank": 7,
         "ticketVolumeRank": 1,
         "tierScore": 4.23,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Process Control Technologies": {
@@ -4180,7 +4746,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.42,
+        "supportLoadScore": 0.0
       }
     },
     "Profit Advisory Group": {
@@ -4212,8 +4783,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.64,
+        "supportLoadScore": 0.22
       }
     },
     "Project Life Movement": {
@@ -4246,7 +4822,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 2.08,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.62,
+        "supportLoadScore": 0.0
       }
     },
     "ProSidian Consulting": {
@@ -4278,8 +4859,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.56,
+        "supportLoadScore": 0.0
       }
     },
     "QMax Industries": {
@@ -4312,7 +4898,12 @@
         "ticketVolumeRank": 7,
         "tierScore": 3.77,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.8,
+        "supportLoadScore": 0.4
       }
     },
     "RAM Pavement": {
@@ -4344,8 +4935,13 @@
         "financialRank": 5,
         "ticketVolumeRank": 4,
         "tierScore": 4.54,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.34,
+        "supportLoadScore": 0.22
       }
     },
     "Randy Joyner Golf": {
@@ -4377,8 +4973,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Red Moon Marketing": {
@@ -4411,10 +5010,12 @@
         "ticketVolumeRank": 10,
         "tierScore": 10.0,
         "tier": "Tier 1",
-        "method": "Approved Tier Override",
+        "method": "SparkNav Client Tier List",
         "calculatedTier": "Tier 1",
         "override": true,
-        "tierSource": "Approved manual assignment"
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "valueScore": 0.95,
+        "supportLoadScore": null
       }
     },
     "Revolution Services Group": {
@@ -4447,7 +5048,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.46,
+        "supportLoadScore": 0.0
       }
     },
     "Reynolds Trucking": {
@@ -4479,8 +5085,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.74,
+        "supportLoadScore": 0.0
       }
     },
     "Ridgecrest Foundation": {
@@ -4513,7 +5124,12 @@
         "ticketVolumeRank": 9,
         "tierScore": 4.69,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.88,
+        "supportLoadScore": 0.0
       }
     },
     "Riifo North America": {
@@ -4545,8 +5161,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 8,
         "tierScore": 4.23,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.67,
+        "supportLoadScore": 0.0
       }
     },
     "Saint Margaret's Episcopal Church": {
@@ -4578,8 +5199,13 @@
         "financialRank": 7,
         "ticketVolumeRank": 1,
         "tierScore": 4.23,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.67,
+        "supportLoadScore": 0.0
       }
     },
     "Sandra Dieterle": {
@@ -4612,7 +5238,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.49,
+        "supportLoadScore": 0.0
       }
     },
     "Scarborough & Britt, LLC": {
@@ -4645,7 +5276,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.49,
+        "supportLoadScore": 0.0
       }
     },
     "Schaefer Plastics North America": {
@@ -4677,8 +5313,11 @@
         "financialRank": 10,
         "ticketVolumeRank": 1,
         "tierScore": 5.85,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Sealing Agents": {
@@ -4710,8 +5349,11 @@
         "financialRank": 5,
         "ticketVolumeRank": 1,
         "tierScore": 3.15,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Service Pros of the Carolinas": {
@@ -4743,8 +5385,13 @@
         "financialRank": 6,
         "ticketVolumeRank": 1,
         "tierScore": 3.69,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.53,
+        "supportLoadScore": 0.0
       }
     },
     "Sheppard Law Firm": {
@@ -4776,8 +5423,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Sistare Carpets": {
@@ -4809,8 +5459,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 6,
         "tierScore": 3.31,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Site Services of the Carolina's": {
@@ -4843,7 +5496,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.48,
+        "supportLoadScore": 0.0
       }
     },
     "SiteWork Estimating Service": {
@@ -4875,8 +5533,13 @@
         "financialRank": 3,
         "ticketVolumeRank": 1,
         "tierScore": 2.08,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.48,
+        "supportLoadScore": 0.22
       }
     },
     "Skyven Technologies": {
@@ -4908,8 +5571,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Smith & Christensen": {
@@ -4942,7 +5608,12 @@
         "ticketVolumeRank": 4,
         "tierScore": 2.38,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.58,
+        "supportLoadScore": 0.0
       }
     },
     "Soccer Shots Franchising": {
@@ -4974,8 +5645,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 1",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.84,
+        "supportLoadScore": 0.0
       }
     },
     "Southeastern Liquid Analyzers (SELA)": {
@@ -5008,7 +5684,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 2.62,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.53,
+        "supportLoadScore": 0.22
       }
     },
     "Southend Exteriors": {
@@ -5040,8 +5721,11 @@
         "financialRank": 9,
         "ticketVolumeRank": 1,
         "tierScore": 5.31,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Southern Piedmont Piping & Fabrication": {
@@ -5074,7 +5758,12 @@
         "ticketVolumeRank": 6,
         "tierScore": 3.31,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.65,
+        "supportLoadScore": 0.0
       }
     },
     "Sovren Group": {
@@ -5106,8 +5795,13 @@
         "financialRank": 3,
         "ticketVolumeRank": 1,
         "tierScore": 2.08,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.4,
+        "supportLoadScore": 0.0
       }
     },
     "Square": {
@@ -5139,8 +5833,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "St Amand & Efird": {
@@ -5172,8 +5869,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "State Building Services": {
@@ -5205,8 +5905,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.66,
+        "supportLoadScore": 0.3
       }
     },
     "Stephens Office Systems": {
@@ -5239,7 +5944,12 @@
         "ticketVolumeRank": 9,
         "tierScore": 4.69,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.78,
+        "supportLoadScore": 0.52
       }
     },
     "Strataform, LLC": {
@@ -5272,7 +5982,12 @@
         "ticketVolumeRank": 6,
         "tierScore": 3.31,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.51,
+        "supportLoadScore": 0.0
       }
     },
     "Summit Reconstruction & Restoration": {
@@ -5304,8 +6019,11 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "Swindell Law Firm": {
@@ -5337,8 +6055,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.61,
+        "supportLoadScore": 0.0
       }
     },
     "TDR Plumbing": {
@@ -5370,8 +6093,13 @@
         "financialRank": 6,
         "ticketVolumeRank": 6,
         "tierScore": 6.0,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.66,
+        "supportLoadScore": 0.0
       }
     },
     "The Batten Group": {
@@ -5403,8 +6131,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.52,
+        "supportLoadScore": 0.0
       }
     },
     "Tison Law": {
@@ -5436,8 +6169,13 @@
         "financialRank": 3,
         "ticketVolumeRank": 1,
         "tierScore": 2.08,
-        "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 3",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.38,
+        "supportLoadScore": 0.0
       }
     },
     "TLG Law": {
@@ -5470,7 +6208,12 @@
         "ticketVolumeRank": 6,
         "tierScore": 3.31,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.7,
+        "supportLoadScore": 0.48
       }
     },
     "Tony Pope": {
@@ -5502,8 +6245,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.61,
+        "supportLoadScore": 0.22
       }
     },
     "TreeTrap": {
@@ -5536,7 +6284,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 2.62,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.6,
+        "supportLoadScore": 0.0
       }
     },
     "Tres Casas Lodging": {
@@ -5568,8 +6321,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.53,
+        "supportLoadScore": 0.0
       }
     },
     "Tucker Administrators": {
@@ -5602,7 +6360,12 @@
         "ticketVolumeRank": 4,
         "tierScore": 2.38,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.72,
+        "supportLoadScore": 0.4
       }
     },
     "Unthinkable": {
@@ -5635,7 +6398,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
         "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.48,
+        "supportLoadScore": 0.0
       }
     },
     "Venn Law Group": {
@@ -5667,8 +6435,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 1",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.78,
+        "supportLoadScore": 0.0
       }
     },
     "WB Moore": {
@@ -5700,8 +6473,11 @@
         "financialRank": 7,
         "ticketVolumeRank": 1,
         "tierScore": 4.23,
-        "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "tier": "Unassigned",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+        "override": false
       }
     },
     "WD Smith Grading": {
@@ -5734,7 +6510,12 @@
         "ticketVolumeRank": 1,
         "tierScore": 2.08,
         "tier": "Tier 2",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 2",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.65,
+        "supportLoadScore": 0.0
       }
     },
     "Williams Electrical": {
@@ -5766,8 +6547,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.55,
+        "supportLoadScore": 0.0
       }
     },
     "Zanes Law": {
@@ -5800,7 +6586,12 @@
         "ticketVolumeRank": 9,
         "tierScore": 4.69,
         "tier": "Tier 1",
-        "method": "Available Data Tier Score v1"
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 1",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.75,
+        "supportLoadScore": 0.36
       }
     },
     "Zar Custom Homes": {
@@ -5832,8 +6623,13 @@
         "financialRank": 1,
         "ticketVolumeRank": 1,
         "tierScore": 1.0,
-        "tier": "Tier 3",
-        "method": "Available Data Tier Score v1"
+        "tier": "Tier 2",
+        "method": "SparkNav Client Tier List",
+        "calculatedTier": "Tier 3",
+        "tierSource": "SparkNav Client Tier List - Aug 28, 2026",
+        "override": true,
+        "valueScore": 0.63,
+        "supportLoadScore": 0.0
       }
     }
   },

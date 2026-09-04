@@ -12,15 +12,6 @@ const SOURCE_ALIASES = new Map([
   [normalize("St. Amand & Efird"), normalize("St. Amand and Efird")]
 ]);
 
-const APPROVED_TIER_OVERRIDES = new Map([
-  ["AccruePartners", "Tier 1"],
-  ["Blue Dot Readi-Mix", "Tier 1"],
-  ["Carolina Ingredients", "Tier 1"],
-  ["Enviro-Master Services", "Tier 1"],
-  ["Mechanical Systems & Services (MSS)", "Tier 1"],
-  ["Red Moon Marketing", "Tier 1"]
-]);
-
 function excelDate(value) {
   if (value instanceof Date && !Number.isNaN(value.valueOf())) return value;
   if (typeof value === "number" && Number.isFinite(value)) {
@@ -248,15 +239,18 @@ export function calculateClientPulse({ masterClients, ar, openTickets, ticketVol
       : index < Math.ceil(tierRows.length * 2 / 3) ? "Tier 2" : "Tier 3";
     clients[row.name].tiering = { ...row, tier, method: "Available Data Tier Score v1" };
   });
-  APPROVED_TIER_OVERRIDES.forEach((tier, name) => {
+  masterClients.forEach(masterClient => {
+    const name = masterClient.name;
     if (!clients[name]) return;
     clients[name].tiering = {
       ...clients[name].tiering,
       calculatedTier: clients[name].tiering.tier,
-      tier,
-      override: true,
-      tierSource: "Approved manual assignment",
-      method: "Approved Tier Override"
+      tier: masterClient.tier,
+      valueScore: masterClient.tierValueScore ?? null,
+      supportLoadScore: masterClient.tierSupportLoadScore ?? null,
+      override: masterClient.tier !== "Unassigned",
+      tierSource: masterClient.tierSource || "Not listed in SparkNav Client Tier List - Aug 28, 2026",
+      method: "SparkNav Client Tier List"
     };
   });
 
@@ -265,11 +259,10 @@ export function calculateClientPulse({ masterClients, ar, openTickets, ticketVol
     generatedAt: new Date().toISOString(),
     scoringModel: "ClientPulse v1",
     tieringModel: {
-      name: "Available Data Tier Score v1",
-      financialFactor: "Total outstanding AR balance",
-      financialWeight: 35 / 65,
-      ticketVolumeWeight: 30 / 65,
-      populationSplit: "Top, middle, and bottom thirds"
+      name: "SparkNav Value Score Tier Model",
+      source: "SparkNav Client Tier List - Aug 28, 2026",
+      valueFactor: "Monthly average revenue, log-scaled",
+      supportLoadTreatment: "Displayed separately; not blended into tier"
     },
     sources: {
       ar: { fileName: ar.fileName, asOf: ar.asOf, matchedClients: arGrouped.matched.size },
